@@ -36,19 +36,31 @@
         <tbody>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 3</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 2</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 1</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> Welcome</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
         </tbody>
       </table>

@@ -10,7 +10,7 @@
     <div class="main">
       <div class="alert-danger">Discussion: Economics 302: Global Trends  /  Week 1 : Globalization</div>
       <div class="panel panel-pure">
-        <button class="button button-normal floated"><span class="abc-pencil"></span>Edit</button>
+        <button class="button button-success floated"><span class="abc-pencil"></span>Edit</button>
         <p>Dear Students: <br /><strong>Please do the following in this discussion board</strong></p>
         <ol class="circle-number">
           <li class="heading4">Find an article relevant to globalization</li>

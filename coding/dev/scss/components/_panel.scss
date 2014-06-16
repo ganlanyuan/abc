@@ -110,8 +110,13 @@
 }
 
 .icons {
-  margin-bottom: em(15);
-  @include breakpoint('min' 640) { float: right; }
+  display: inline-block;
+  .float-icons & { 
+    margin-bottom: em(15);
+    @include breakpoint('min' 640) { 
+      float: right; 
+    }
+  }
   .button, span { vertical-align: middle; }
   > [class^='abc-'] {
     @extend %global-transition;

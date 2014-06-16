@@ -35,19 +35,31 @@
         <tbody>
           <tr>
             <td>New Testment 101 - Sample Class</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Old Testament 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Missions 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Release 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
+            </td>
           </tr>
         </tbody>
       </table>

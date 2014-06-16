@@ -1,0 +1,20 @@
+// breadcrumb
+// ============
+
+.breadcrumb {
+  @include button(14px '10px 20px' #f2f2f2 radius);
+  display: block;
+  margin-bottom: em(20, 14);
+  color: #888;
+  letter-spacing: -0.34em; // remove extra space
+  a, span { letter-spacing: 0; } // restore default letter-spacing
+  a {
+    color: #2382EF;
+    &:after {
+      content: '/';
+      display: inline-block;
+      padding: 0 0.5em;
+      color: #888;
+    }
+  }
+}

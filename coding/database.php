@@ -33,61 +33,81 @@
             <td>Peter</td>
             <td>Bosworth</td>
             <td>258291</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Jane</td>
             <td>Doe</td>
             <td>988382</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Lisa</td>
             <td>Gandy</td>
             <td>740382</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Leann</td>
             <td>Goatley</td>
             <td>532850</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Edward</td>
             <td>Jones</td>
             <td>493829</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Gabriel</td>
             <td>Jones</td>
             <td>111999</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Mary</td>
             <td>Kingsley</td>
             <td>194023</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Michael</td>
             <td>Lin</td>
             <td>494821</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Allie</td>
             <td>Luper</td>
             <td>598503</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
           <tr>
             <td>Vicky</td>
             <td>Paro</td>
             <td>102948</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span></td>
+            <td>
+              <?php include 'part/button/edit.php'; ?>
+            </td>
           </tr>
         </tbody>
       </table>

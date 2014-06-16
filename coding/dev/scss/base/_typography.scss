@@ -12,7 +12,7 @@
   .small { @include type(300); }
 }
 
-.p, p { @include type(15px 1.33); }
+.p, p { @include type(15px 1.6); }
 p { 
   margin-bottom: 1em; 
   &:last-child { margin-bottom: 0; }

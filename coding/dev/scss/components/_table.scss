@@ -24,4 +24,25 @@ th {
   &-striped {
     > tbody > tr:nth-of-type(odd) { background: #f6f6f6; }
   }
+  &-discussion .icons {
+    @include breakpoint('max' 849) {
+      .button {
+        margin: 10px 0;
+        vertical-align: middle;
+      }
+    }
+    @include breakpoint('min' 850) {
+      float: right;
+    }
+  }
+  &-quiz-grades {
+    input { width: 3em; }
+    .input { 
+      background-color: #F0F0F0;
+      &-group {
+        min-width: 7em;
+      }
+    }
+    .button { margin-bottom: 5px; }
+  }
 }

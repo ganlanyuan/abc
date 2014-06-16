@@ -13,10 +13,10 @@
           <span class="abc-home icons-lg"></span>
           <h3 class="heading3">course home: <span class="small">economics 302: global trends</span></h3>
         </div>
-        <div class="panel-body inner">
+        <div class="panel-body float-icons inner">
           <div class="icons">
-            <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-            <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
+            <?php include 'part/button/edit.php'; ?>
+            <?php include 'part/button/delete.php'; ?>
             <span class="abc-arrow-down"></span>
             <span class="abc-arrow-up"></span>
           </div>
@@ -26,11 +26,11 @@
           <p>Good luck!</p>
           <div><a href="" class="file-name">GarlicFries_927x365.jpg</a></div>
         </div>
-        <div class="panel-body inner">
+        <div class="panel-body float-icons inner">
           <header>
             <div class="icons">
-              <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-              <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
@@ -43,11 +43,11 @@
           <p>Enjoy!</p>
 
         </div>
-        <div class="panel-body inner">
+        <div class="panel-body float-icons inner">
           <header>
             <div class="icons">
-              <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-              <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
+              <?php include 'part/button/edit.php'; ?>
+              <?php include 'part/button/delete.php'; ?>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
