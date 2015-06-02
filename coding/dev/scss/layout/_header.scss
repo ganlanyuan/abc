@@ -1,6 +1,7 @@
 // header
 // ==========
 
+.clearfix { @extend %clearfix; }
 .container { @include container(em(1160)); }
 body { background-color: #f7f8fa; }
 .head {

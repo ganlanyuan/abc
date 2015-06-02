@@ -1,4 +1,4 @@
-.ad-bg:after, .ad-combined:after, .container:after {
+.ad-bg:after, .ad-combined:after, .clearfix:after, .container:after {
   clear: both;
   content: "";
   display: table;
@@ -39,7 +39,7 @@
   font-weight: bold;
 }
 
-.ad-bg:after, .ad-combined:after, .container:after {
+.ad-bg:after, .ad-combined:after, .clearfix:after, .container:after {
   clear: both;
   content: "";
   display: table;
@@ -695,9 +695,15 @@ body {
 }
 
 .foot {
+  margin-top: 1.25em;
   font-size: 15px;
   border-top: 1px solid #e4e4e4;
   background-color: #fff;
+}
+@media (min-width: 64em) {
+  .foot {
+    margin-top: 2.5em;
+  }
 }
 .foot-nav {
   font-style: normal;
@@ -810,6 +816,18 @@ body {
 
 .button {
   white-space: nowrap;
+}
+
+@media (min-width: 64em) {
+  .home-main {
+    float: left;
+    width: 58.62%;
+    margin-right: 3.45%;
+  }
+  .home-aside {
+    float: left;
+    width: 37.93%;
+  }
 }
 
 @media print {

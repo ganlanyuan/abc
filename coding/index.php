@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="clearfix">
-    <div class="panel">
+    <div class="panel home-main">
       <div class="panel-heading">
         <span class="abc-speaker icons-lg"></span>
         <h3>Announcements</h3>
@@ -42,7 +42,7 @@
         </ul>
       </div>
     </div>
-    <div class="panel">
+    <div class="panel home-aside">
       <div class="panel-heading">
         <span class="abc-speaker icons-lg"></span>
         <h3>My Courses: Winter 2015</h3>

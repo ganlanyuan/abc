@@ -2,9 +2,11 @@
 // ==========
 
 .foot {
+  margin-top: em(20);
   font-size: 15px;
   border-top: 1px solid map-get($border-color, normal);
   background-color: #fff;
+  @include breakpoint-mi(map-get($bp, lg)){ margin-top: em(40); }
   &-nav {
     font-style: normal;
     border-bottom: 1px solid map-get($border-color, normal);
