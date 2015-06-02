@@ -1,6 +1,82 @@
 // header
 // ==========
 
-.container {
-  @include container(em(1160));
+.container { @include container(em(1160)); }
+body { background-color: #f7f8fa; }
+.head {
+  background-color: #fff;
+  margin-bottom: 40px;
+  @include breakpoint-ma(600){
+    text-align: center;
+    margin-bottom: 20px;
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &-nav {
+    color: $brand-color;
+    border-top: 1px solid map-get($border-color, normal);
+    border-bottom: 1px solid map-get($border-color, normal);
+    .abc {
+      &-home,
+      &-user { @include visible(350); }
+    } 
+    a { color: $brand-color; }
+    ul { letter-spacing: -0.34em; }
+    li {
+      width: 50%;
+      padding: map-get($head-padding, sm) (map-get($head-padding, sm) / 2);
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: 0;
+      box-sizing: border-box;
+      border-right: 1px solid map-get($border-color, normal);
+      @include breakpoint-ma(600){
+        .my-homepage { width: 46%; }
+        .my-login { width: 54%; }
+        &:last-child { border-right-width: 0; }
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      > .user-name { text-align: left; }
+    }
+  }
+  .icons-circle { @extend %global-transition; }
+  @include breakpoint-ma(map-get($bp, xs)) {
+    .icons-circle {
+      width: map-get($icon-wrap-size, sm);
+      height: map-get($icon-wrap-size, sm);
+      &:before {
+        line-height: map-get($icon-wrap-size, sm);
+      }
+    }
+    .icons-md { font-size: map-get($icon-size, sm); }
+  }
+}
+.branding {
+  > a {
+    @extend %global-transition;
+    display: block;
+    padding: map-get($head-padding, sm) 0;
+    @include breakpoint-mi(768) {
+      padding: map-get($head-padding, lg) 0;
+    }
+  }
+}
+.nav-title {
+  @include type(15px 700 1.15 uppercase);
+  @include breakpoint-ma(map-get($bp, xs)){
+    @include type(12px);
+  }
+  small { 
+    @include type(0.73em weight-normal); 
+    color: #777;
+  }
+}
+.my-homepage > a > span,
+.my-login > span {
+  margin: 0 2px;
 }

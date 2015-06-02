@@ -1,2 +1,29 @@
 // footer
 // ==========
+
+.foot {
+  font-size: 15px;
+  border-top: 1px solid map-get($border-color, normal);
+  background-color: #fff;
+  &-nav {
+    font-style: normal;
+    border-bottom: 1px solid map-get($border-color, normal);
+    li {
+      margin: map-get($head-padding, lg) 0;
+      > span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    [class^='abc-'] {
+      margin-right: 0.3em;
+    }
+  }
+  .powered {
+    text-align: center;
+    margin: map-get($head-padding, lg) 0;
+    a {
+      text-transform: uppercase;
+    }
+  }
+}

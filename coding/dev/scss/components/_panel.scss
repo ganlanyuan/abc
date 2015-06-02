@@ -1,0 +1,47 @@
+// panel
+// ============
+
+.panel {
+  &-heading {
+    padding: map-get($panel-padding, head);
+    background-color: #fff;
+    border: 1px solid map-get($border-color, normal);
+    border-bottom: 2px solid $brand-color;
+  }
+  &-body {
+    border: 1px solid map-get($border-color, normal);
+    border-top-width: 0;
+    background-color: #f2f2f2;
+    li {
+      padding: map-get($panel-padding, head);
+      border-bottom: 1px solid map-get($border-color, normal);
+      &:last-child { border-bottom-width: 0; }
+    }
+    .wider li {
+      padding-top: em(30);
+      padding-bottom: em(30);
+    }
+  }
+  &-media { 
+    @each $item in left, right {
+      &-#{$item} { @include media(0.5em media '.media' body '.media-body' $item); }
+    }
+    &-left,
+    &-right {
+      .media,
+      .media-body { vertical-align: middle; }
+    }
+  }
+  .cell {
+    &-group {
+      display: table;
+      width: 100%;
+    }
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 0.5em; 
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

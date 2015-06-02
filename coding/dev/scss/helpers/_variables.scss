@@ -1,6 +1,44 @@
 // variables
 // ============
 
+// layout
+$global-gutter: 3.45%;
+$layout: (
+  container: 1024px, 
+  columns: 12,
+  gutter: $global-gutter,
+);
+$bp: (
+  xs: 430,
+);
+
+// margins and paddings
+$head-padding: (
+  sm: em(14),
+  lg: em(20),
+);
+$panel-padding: (
+  head: em(15) em(20),
+);
+
+// z-index
+$z-index: 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100;
+
+// transition
+$global-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+// icon
+$icon-path: '../abc-icons/fonts/';
+$icon-wrap-size: (
+  sm: 26px,
+  lg: 36px,
+);
+$icon-size: (
+  sm: 16px,
+  md: 22px,
+  lg: 30px,
+);
+
 // font
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $arial: Arial, Helvetica, sans-serif;
@@ -8,12 +46,10 @@ $opensans: 'Open Sans', Arial, sans-serif;
 $oswald: 'Oswald', Arial, sans-serif;
 $georgia: Georgia, "Times New Roman", Times, Baskerville, serif;
 
-
 // color
-$brand-color: #000;
+$brand-color: #2c3754;
 $text-color: #212121;
 $border-color: #e1e1e1;
-
 $social: (
   facebook-like: #4660b5, 
   facebook: #39579a, 
@@ -26,24 +62,13 @@ $social: (
   email: #1D90DD, 
   primary: #0078E7
 ) !default;
-
 $alerts:(
   success: #3A945B,
   info: #2270C1,
   warning: #DE770F,
   alert: #DE2D0F
 ) !default;
-
-
-// size
-$global-gutter: 30px;
-
-
-// z-index
-$z-index: 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100;
-
-
-// transition
-$global-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
-
+$border-color: (
+  normal: #e4e4e4,
+);
 

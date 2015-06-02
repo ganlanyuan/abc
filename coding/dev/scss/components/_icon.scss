@@ -1,0 +1,42 @@
+// icon styles
+.icons {
+  &-circle {
+    @extend %icons;
+    width: map-get($icon-wrap-size, lg);
+    height: map-get($icon-wrap-size, lg);
+    border: 2px solid  #e3e5e8;
+    &:before {
+      line-height: map-get($icon-wrap-size, lg);
+    }
+  }
+  &-rect {
+    @extend %global-transition;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #f7f8fa;
+    border: 1px solid map-get($border-color, normal);
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+      border-color: darken(#f7f8fa, 4%);
+      background-color: darken(#f7f8fa, 4%);
+    }
+  }
+  &-fill {
+    @extend %icons;
+    width: map-get($icon-wrap-size, sm);
+    height: map-get($icon-wrap-size, sm);
+    color: #fff;
+    background-color: $brand-color;
+    &:before {
+      line-height: map-get($icon-wrap-size, sm);
+    }
+  }
+  @each $size in sm, md, lg {
+    &-#{$size} {
+      font-size: map-get($icon-size, $size);
+    }
+  }
+}

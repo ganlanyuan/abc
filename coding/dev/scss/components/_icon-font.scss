@@ -1,0 +1,72 @@
+// icon-font
+@font-face {
+  font-family: "abc-icons";
+  src:url("#{$icon-path}abc-icons.eot");
+  src:url("#{$icon-path}abc-icons.eot?#iefix") format("embedded-opentype"),
+    url("#{$icon-path}abc-icons.woff") format("woff"),
+    url("#{$icon-path}abc-icons.ttf") format("truetype"),
+    url("#{$icon-path}abc-icons.svg#abc-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "abc-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="abc-"]:before,
+[class*=" abc-"]:before {
+  font-family: "abc-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.abc-home:before {
+  content: "a";
+}
+.abc-user:before {
+  content: "b";
+}
+.abc-email:before {
+  content: "d";
+}
+.abc-phone:before {
+  content: "e";
+}
+.abc-pin:before {
+  content: "f";
+}
+.abc-calendar:before {
+  content: "g";
+}
+.abc-speaker:before {
+  content: "h";
+}
+.abc-down-dir:before {
+  content: "c";
+}
+.abc-left-dir:before {
+  content: "i";
+}
+.abc-right-dir:before {
+  content: "j";
+}
+.abc-up-dir:before {
+  content: "k";
+}

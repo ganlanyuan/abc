@@ -15,28 +15,61 @@
   <div class="clearfix">
     <div class="panel">
       <div class="panel-heading">
-        <span class="abc-speaker"></span>
+        <span class="abc-speaker icons-lg"></span>
         <h3>Announcements</h3>
         <a href="" class="button button-primary">View all</a>
       </div>
       <div class="panel-body">
-        <ul>
-          <li><a href=""><span class="abc-speaker icon-fill"></span>Registration is winter 2015 semester courses. Registration ends on 4 April 2015.</a></li>
-          <li><a href=""><span class="abc-speaker icon-fill"></span>The Winter Picnic and BBQ is this Saturday. All students and faculty are welcome to join in as we start a new semester!</a></li>
-          <li><a href=""><span class="abc-speaker icon-fill"></span>Welcome Students! We hope have a great semester. </a></li>
+        <ul class="wider">
+          <li><a href="">
+            <div class="cell-group">
+              <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
+              <span class="cell">Registration is winter 2015 semester courses. Registration ends on 4 April 2015.</span>
+            </div>
+          </a></li>
+          <li><a href="">
+            <div class="cell-group">
+              <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
+              <span class="cell">The Winter Picnic and BBQ is this Saturday. All students and faculty are welcome to join in as we start a new semester!</span>
+            </div>
+          </a></li>
+          <li><a href="">
+            <div class="cell-group">
+              <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
+              <span class="cell">Welcome Students! We hope have a great semester. </span>
+            </div>
+          </a></li>
         </ul>
       </div>
     </div>
     <div class="panel">
       <div class="panel-heading">
-        <span class="abc-speaker"></span>
+        <span class="abc-speaker icons-lg"></span>
         <h3>My Courses: Winter 2015</h3>
       </div>
       <div class="panel-body">
         <ul>
-          <li><a href="" class="button">Go to class</a><span class="abc-calendar icon-fill"></span>Algebra 103.: Intermediate</li>
-          <li><a href="" class="button">Go to class</a><span class="abc-calendar icon-fill"></span>Economics 302: Global Trends</li>
-          <li><a href="" class="button">Go to class</a><span class="abc-calendar icon-fill"></span>Chemistry 204: Organic Chemistry</li>
+          <li>
+            <div class="cell-group">
+              <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
+              <span class="cell">Algebra 103.: Intermediate</span>
+              <span class="cell"><a href="" class="button">Go to class</a></span>
+            </div>
+          </li>
+          <li>
+            <div class="cell-group">
+              <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
+              <span class="cell">Economics 302: Global Trends</span>
+              <span class="cell"><a href="" class="button">Go to class</a></span>
+            </div>
+          </li>
+          <li>
+            <div class="cell-group">
+              <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
+              <span class="cell">Chemistry 204: Organic Chemistry</span>
+              <span class="cell"><a href="" class="button">Go to class</a></span>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="view-term">

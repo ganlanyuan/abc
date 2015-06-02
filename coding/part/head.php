@@ -33,8 +33,9 @@
 	<!-- <link href="http://mydomain.com/my-next-page.htm" rel="prerender"> -->
 
 	<!-- css -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link href="assets/css/main.css" rel="stylesheet" >
 
 	<!-- javascript -->
 	<!--[if (lt IE 9)]>
