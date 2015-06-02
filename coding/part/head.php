@@ -12,7 +12,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- <meta http-equiv="cleartype" content="on"> -->
-	<title>Site Title</title>
+	<title>ABC Institute</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="HandheldFriendly" content="True">
@@ -33,7 +33,7 @@
 	<!-- <link href="http://mydomain.com/my-next-page.htm" rel="prerender"> -->
 
 	<!-- css -->
-	<link href="https://fontastic.s3.amazonaws.com/MSJHPuJFXkve8cKEDAVMKT/icons.css" rel="stylesheet">
+	<link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<!-- javascript -->
@@ -48,5 +48,4 @@
 
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	<script src="assets/js/script.js"></script>
-  <?php // include_once("svg-ajax.php") ?>
 </head>
