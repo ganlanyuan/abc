@@ -1,0 +1,8 @@
+// classroom
+// =============
+
+.nav-left {
+  @include breakpoint-mi(768) {
+    @include two-columns(left 270px gutter 40px);
+  }
+}

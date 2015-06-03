@@ -7,11 +7,12 @@
 .heading4 { @include type(15px 700 uppercase); }
 // .heading5 { @include type(15px 700); }
 // .heading6 { @include type(47px 600 l.2); }
-
-.p, p { @include type(15px 1.3); }
-p { margin-bottom: 1em; }
-.minor { color: $minor; }
 .heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
   color: $brand-color;
   .small { @include type(300); }
 }
+
+.p, 
+p { @include type(15px 1.3); }
+p { margin-bottom: 1em; }
+.minor { color: $minor; }

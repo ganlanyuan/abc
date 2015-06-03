@@ -10,7 +10,7 @@
   cursor: pointer;
   &-normal { @include button(map-get($button, 'normal') 'hover'); }
   &-secondary { @include button(map-get($button, 'secondary') 'hover'); }
-  &-success { @include button(map-get($button, 'success') 'hover'); }
+  &-success { @include button(map-get($button, 'success') 'hover'); color: #fff; }
   &-alert { @include button(map-get($button, 'alert') 'hover'); }
   &-line {
     font-weight: normal;
@@ -34,6 +34,7 @@
     }
   }
 }
-input.button { 
+input.button,
+button.button { 
   line-height: 1 !important; 
 }

@@ -12,8 +12,8 @@
           <span class="user-name">
             <span class="nav-title"><small>Logged in as</small><br />Michael Jones</span>
           </span>
-          <label for="user-panel-checkbox"><span class="abc-caret-down icons-rect"></span></label>
           <input type="checkbox" name="" id="user-panel-checkbox">
+          <label for="user-panel-checkbox"><span class="abc-caret-down icons-rect"></span></label>
           <div class="user-panel">
             <a href="">Lorem ipsum</a>
             <a href="">Architecto quaerat</a>
