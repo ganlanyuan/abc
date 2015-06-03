@@ -46,9 +46,12 @@
     @include button(#f2f2f2 radius);
     position: relative;
     display: inline-block;
+    padding: 0.4em 0.6em;
     width: calc(100% - 87px);
     border: 1px solid $border-color;
     overflow: hidden;
+    font-size: 14px;
+    box-sizing: border-box;
     [class^='abc-'] {
       display: inline-block;
       position: absolute;
@@ -59,11 +62,9 @@
     .no-csscalc & { width: 66%; }
   }
   select {
-    @include type(14px 1);
-    padding: 0.4em 0.6em;
     border-width: 0;
     background-color: #f2f2f2;
-    width: 150%;
+    width: 120%;
   }
   input { 
     float: right; 
