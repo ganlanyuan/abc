@@ -7,12 +7,19 @@
           <span class="abc-home icons-circle icons-md"></span>
           <span><span class="nav-title">My Homepage</span></span>
         </a></li>
-        <li class="my-login">
+        <li class="my-login dropdown">
           <span class="abc-user icons-circle icons-md"></span>
           <span class="user-name">
             <span class="nav-title"><small>Logged in as</small><br />Michael Jones</span>
           </span>
-          <span class="abc-down-dir icons-rect"></span>
+          <label for="user-panel-checkbox"><span class="abc-caret-down icons-rect"></span></label>
+          <input type="checkbox" name="" id="user-panel-checkbox">
+          <div class="user-panel">
+            <a href="">Lorem ipsum</a>
+            <a href="">Architecto quaerat</a>
+            <a href="">Sunt tempore</a>
+            <a href="">Quibusdam harum</a>
+          </div>
         </li>
       </ul>
     </nav>

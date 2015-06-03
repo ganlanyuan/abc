@@ -16,73 +16,76 @@
   </div>
   <div class="clearfix">
     <div class="panel home-main">
-      <div class="panel-heading">
+      <div class="panel-head">
         <span class="abc-speaker icons-lg"></span>
-        <h3>Announcements</h3>
-        <a href="" class="button button-primary">View all</a>
+        <h3 class="heading3">Announcements</h3>
+        <a href="" class="button button-alert">View all</a>
       </div>
       <div class="panel-body panel-bottom">
         <ul class="wider">
           <li><a href="">
             <div class="cell-group">
               <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
-              <span class="cell">Registration is winter 2015 semester courses. Registration ends on 4 April 2015.</span>
+              <span class="cell minor p">Registration is winter 2015 semester courses. Registration ends on 4 April 2015.</span>
             </div>
           </a></li>
           <li><a href="">
             <div class="cell-group">
               <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
-              <span class="cell">The Winter Picnic and BBQ is this Saturday. All students and faculty are welcome to join in as we start a new semester!</span>
+              <span class="cell minor p">The Winter Picnic and BBQ is this Saturday. All students and faculty are welcome to join in as we start a new semester!</span>
             </div>
           </a></li>
           <li><a href="">
             <div class="cell-group">
               <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
-              <span class="cell">Welcome Students! We hope have a great semester. </span>
+              <span class="cell minor">Welcome Students! We hope have a great semester. </span>
             </div>
           </a></li>
         </ul>
       </div>
     </div>
     <div class="panel home-aside">
-      <div class="panel-heading">
+      <div class="panel-head">
         <span class="abc-speaker icons-lg"></span>
-        <h3>My Courses: Winter 2015</h3>
+        <h3 class="heading3">My Courses: Winter 2015</h3>
       </div>
       <div class="panel-body">
         <ul>
           <li>
             <div class="cell-group">
               <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
-              <span class="cell">Algebra 103.: Intermediate</span>
-              <span class="cell"><a href="" class="button">Go to class</a></span>
+              <span class="cell minor p">Algebra 103.: Intermediate</span>
+              <span class="cell right"><a href="" class="button button-normal">Go to class</a></span>
             </div>
           </li>
           <li>
             <div class="cell-group">
               <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
-              <span class="cell">Economics 302: Global Trends</span>
-              <span class="cell"><a href="" class="button">Go to class</a></span>
+              <span class="cell minor p">Economics 302: Global Trends</span>
+              <span class="cell right"><a href="" class="button button-normal">Go to class</a></span>
             </div>
           </li>
           <li>
             <div class="cell-group">
               <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
-              <span class="cell">Chemistry 204: Organic Chemistry</span>
-              <span class="cell"><a href="" class="button">Go to class</a></span>
+              <span class="cell minor p">Chemistry 204: Organic Chemistry</span>
+              <span class="cell right"><a href="" class="button button-normal">Go to class</a></span>
             </div>
           </li>
         </ul>
       </div>
-      <div class="view-term panel-bottom">
-        <h4>View Another Term</h4>
+      <div class="view-term panel-bottom panel-foot">
+        <h4 class="heading4">View Another Term</h4>
         <form action="">
-          <select name="" id="">
-            <option value="Winter 2015">Winter 2015</option>
-            <option value="Spring 2016">Spring 2016</option>
-            <option value="Summer 2016">Summer 2016</option>
-          </select>
-          <input type="submit" value="Submit" class="button button-primary">
+          <span class="select-wrap">
+            <select name="" id="">
+              <option value="Winter 2015">Winter 2015</option>
+              <option value="Spring 2016">Spring 2016</option>
+              <option value="Summer 2016">Summer 2016</option>
+            </select>
+            <span class="abc-caret-down"></span>
+          </span>
+          <input type="submit" value="Submit" class="button button-alert">
         </form>
       </div>
     </div>

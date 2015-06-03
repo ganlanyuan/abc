@@ -1,0 +1,22 @@
+// pagination
+// ============
+
+.pagination {
+  a {
+    @include button(15px '0.25em 0.6em' radius #fff hover);
+    display: inline-block;
+    margin-bottom: .3em;
+    line-height: 1;
+    border: 1px solid $border-color;
+    color: $minor;
+    &:hover {
+      background-color: #f2f2f2;
+      border-color: #f2f2f2;
+    }
+    &.current {
+      color: #fff;
+      background-color: map-get($button, 'alert');
+      border-color: map-get($button, 'alert');
+    }
+  }
+}

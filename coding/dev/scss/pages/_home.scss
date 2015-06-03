@@ -37,4 +37,36 @@
     &-aside { @include span(4 of 10 $global-gutter last); }
   }
 }
-
+.view-term {
+  form { 
+    @extend %clearfix; 
+    margin-top: em(8);
+  }
+  .select-wrap {
+    @include button(#f2f2f2 radius);
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 87px);
+    border: 1px solid $border-color;
+    overflow: hidden;
+    [class^='abc-'] {
+      display: inline-block;
+      position: absolute;
+      right: 6px;
+      top: 7px;
+      color: $minor;
+    }
+    .no-csscalc & { width: 66%; }
+  }
+  select {
+    @include type(14px 1);
+    padding: 0.4em 0.6em;
+    border-width: 0;
+    background-color: #f2f2f2;
+    width: 150%;
+  }
+  input { 
+    float: right; 
+    .no-csscalc & { width: 33%; }
+  }
+}

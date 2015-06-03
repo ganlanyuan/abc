@@ -2,13 +2,16 @@
 // ============
 
 .panel {
-  &-heading {
+  &-head,
+  &-foot {
     padding: map-get($panel-padding, head);
     background-color: #fff;
-    border: 1px solid map-get($border-color, normal);
+    border: 1px solid $border-color;
+  }
+  &-head {
     border-bottom: 2px solid $brand-color;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: $panel-radius;
+    border-top-right-radius: $panel-radius;
     > h3,
     > span,
     > a { vertical-align: middle; }
@@ -16,13 +19,16 @@
       display: inline-block;
     }
   }
+  &-foot {
+    border-top-width: 0;
+  }
   &-body {
-    border: 1px solid map-get($border-color, normal);
+    border: 1px solid $border-color;
     border-top-width: 0;
     background-color: #f2f2f2;
     li {
       padding: map-get($panel-padding, head);
-      border-bottom: 1px solid map-get($border-color, normal);
+      border-bottom: 1px solid $border-color;
       &:last-child { border-bottom-width: 0; }
     }
     .wider li {
@@ -31,8 +37,8 @@
     }
   }
   &-bottom {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: $panel-radius;
+    border-bottom-right-radius: $panel-radius;
   }
   &-media { 
     @each $item in left, right {
@@ -52,8 +58,7 @@
     display: table-cell;
     vertical-align: middle;
     padding-right: 0.5em; 
-    &:last-child {
-      padding-right: 0;
-    }
+    &:last-child { padding-right: 0; }
+    &.right { text-align: right; }
   }
 }

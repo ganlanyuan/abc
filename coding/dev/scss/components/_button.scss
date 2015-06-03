@@ -2,5 +2,38 @@
 // ============
 
 .button {
+  @include button('0.75em 1.1em' radius);
+  @include type(14px 700 1 uppercase);
+  display: inline-block;
   white-space: nowrap;
+  border-width: 0;
+  cursor: pointer;
+  &-normal { @include button(map-get($button, 'normal') 'hover'); }
+  &-secondary { @include button(map-get($button, 'secondary') 'hover'); }
+  &-success { @include button(map-get($button, 'success') 'hover'); }
+  &-alert { @include button(map-get($button, 'alert') 'hover'); }
+  &-line {
+    font-weight: normal;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+    border: 1px solid  #fff;
+    border-radius: 0;
+  }
+  &-search {
+    @include type('weight-normal' 'none');
+    padding-right: 40px;
+    background: #f2f2f2 url('../img/icon-search.png') right 50% no-repeat;
+    border: 1px solid $border-color;
+    cursor: default;
+  }
+  &-group {
+    .button {
+      margin-bottom: -1px;
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+input.button { 
+  line-height: 1 !important; 
 }

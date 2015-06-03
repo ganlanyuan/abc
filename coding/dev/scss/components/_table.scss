@@ -1,0 +1,27 @@
+// table
+// ============
+
+table { 
+  width: 100%; 
+}
+thead > tr {
+  border-bottom: 2px solid $brand-color;
+}
+th, td {
+  padding: map-get($panel-padding, 'head');
+  text-align: left;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: $border-color;
+  &:last-of-type { border-right-width: 0; }
+}
+tr:last-of-type td { border-bottom-width: 0; }
+th { 
+  @include type(17px 600 uppercase); 
+  color: $brand-color;
+}
+.table {
+  &-striped {
+    > tbody > tr:nth-of-type(odd) { background: #f6f6f6; }
+  }
+}

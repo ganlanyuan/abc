@@ -21,8 +21,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<!-- favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+	<link rel="shortcut icon" href="assets/favicon/favicon.png">
 
 	<!-- Prefetch DNS for external assets -->
 	<link href="https://fontastic.s3.amazonaws.com" rel="dns-prefetch">
@@ -33,7 +33,7 @@
 	<!-- <link href="http://mydomain.com/my-next-page.htm" rel="prerender"> -->
 
 	<!-- css -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet" >
 

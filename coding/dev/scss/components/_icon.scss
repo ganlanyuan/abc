@@ -16,7 +16,7 @@
     line-height: 25px;
     text-align: center;
     background-color: #f7f8fa;
-    border: 1px solid map-get($border-color, normal);
+    border: 1px solid $border-color;
     border-radius: 2px;
     cursor: pointer;
     &:hover {
@@ -40,3 +40,4 @@
     }
   }
 }
+[class^='abc-caret-'] { font-size: 12px; }

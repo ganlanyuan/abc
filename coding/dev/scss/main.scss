@@ -14,6 +14,16 @@
 @import "../../bower_components/inuit-normalize.css/generic.normalize";
 @import "base/reset";
 @import "base/ad";
+@import "base/typography";
+
+// components
+// @import "components/icon-font";
+@import "components/icon";
+@import "components/panel";
+@import "components/button";
+@import "components/table";
+@import "components/pagination";
+@import "components/dropdown";
 
 // layout
 @import "layout/header";
@@ -21,15 +31,10 @@
 @import "layout/navigation";
 @import "layout/sidebar";
 
-// components
-// @import "components/icon-font";
-@import "components/icon";
-@import "components/panel";
-@import "components/button";
-@import "components/dropdown";
-
 // pages
 @import "pages/home";
+@import "pages/database";
+@import "pages/login";
 @import "pages/contact";
 
 @import "base/print";

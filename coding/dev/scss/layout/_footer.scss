@@ -3,7 +3,7 @@
 
 .foot {
   margin-top: em(20);
-  border-top: 1px solid map-get($border-color, normal);
+  border-top: 1px solid $border-color;
   background-color: #fff;
   @include breakpoint-ma((map-get($bp, 'foot-layout') - 1)){
     .container { 
@@ -15,7 +15,7 @@
   &-nav {
     font-size: 15px;
     font-style: normal;
-    border-bottom: 1px solid map-get($border-color, normal);
+    border-bottom: 1px solid $border-color;
     @include breakpoint-mi(map-get($bp, 'foot-layout')){
       float: left;
       border-bottom-width: 0;
@@ -33,7 +33,7 @@
         display: inline-block;
         margin: 0;
         padding: map-get($head-padding, 'lg') (map-get($head-padding, 'lg') * 1.5);
-        border-right: 1px solid map-get($border-color, 'normal');
+        border-right: 1px solid $border-color;
         &:last-child { padding-right: 0; border-right-width: 0; }
       }
       @include breakpoint-mi(map-get($bp, 'foot-layout')){

@@ -24,9 +24,13 @@ $head-padding: (
 $panel-padding: (
   'head': em(15) em(20),
 );
+$panel-radius: 3px;
 
 // z-index
-$z-index: 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100;
+$z-index: (
+  'foot': 100,
+  'login-content': 99,
+);
 
 // transition
 $global-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -53,7 +57,14 @@ $georgia: Georgia, "Times New Roman", Times, Baskerville, serif;
 // color
 $brand-color: #2c3754;
 $text-color: #212121;
-$border-color: #e1e1e1;
+$border-color: #e4e4e4;
+$minor: #636363;
+$button:(
+  'normal': #3b3e43,
+  'secondary': $brand-color,
+  'success': #9bbd48,
+  'alert': #c04545,
+);
 $social: (
   'facebook-like': #4660b5, 
   'facebook': #39579a, 
@@ -72,7 +83,4 @@ $alerts:(
   'warning': #DE770F,
   'alert': #DE2D0F
 ) !default;
-$border-color: (
-  'normal': #e4e4e4,
-);
 
