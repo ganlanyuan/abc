@@ -34,12 +34,13 @@
         margin: 0;
         padding: map-get($head-padding, 'lg') (map-get($head-padding, 'lg') * 1.5);
         border-right: 1px solid $border-color;
-        &:last-child { padding-right: 0; border-right-width: 0; }
+        &:last-child { border-right-width: 0; }
       }
       @include breakpoint-mi(map-get($bp, 'foot-layout')){
         float: left;
         display: block;
         &:first-child { padding-left: 0; }
+        &:last-child { padding-right: 0; }
       }
       > span {
         display: inline-block;

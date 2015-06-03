@@ -32,7 +32,7 @@
   }
 }
 .home {
-  @include breakpoint-mi(map-get($bp, 'md')){
+  @include breakpoint-mi(1000){
     &-main { @include span(6 of 10 $global-gutter); }
     &-aside { @include span(4 of 10 $global-gutter last); }
   }

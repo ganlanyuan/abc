@@ -59,6 +59,7 @@ body { background-color: #f7f8fa; }
       .user-panel { 
         margin-top: map-get($head-padding, 'sm'); 
         text-align: left;
+        z-index: map-get($z-index, 'head-user-pannel');
       }
       @include breakpoint-ma((map-get($bp, 'md') - 1)){
         &:last-child { border-right-width: 0; }

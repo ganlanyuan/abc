@@ -958,6 +958,7 @@ body {
 .head-nav li .user-panel {
   margin-top: 0.875em;
   text-align: left;
+  z-index: 100;
 }
 @media (max-width: 47.9375em) {
   .head-nav li:last-child {
@@ -1103,7 +1104,6 @@ body {
     border-right: 1px solid #e4e4e4;
   }
   .foot-nav li:last-child {
-    padding-right: 0;
     border-right-width: 0;
   }
 }
@@ -1114,6 +1114,9 @@ body {
   }
   .foot-nav li:first-child {
     padding-left: 0;
+  }
+  .foot-nav li:last-child {
+    padding-right: 0;
   }
 }
 .foot-nav li > span {
@@ -1316,7 +1319,7 @@ body {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 62.5em) {
   .home-main {
     float: left;
     width: 58.62%;
