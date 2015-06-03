@@ -6,8 +6,8 @@
 body { background-color: #f7f8fa; }
 .head {
   background-color: #fff;
-  margin-bottom: 40px;
-  @include breakpoint-ma(600){
+  margin-bottom: $global-gutter;
+  @include breakpoint-ma((map-get($bp, 'md') - 1)){
     text-align: center;
     margin-bottom: 20px;
     .container {
@@ -15,28 +15,40 @@ body { background-color: #f7f8fa; }
       margin-right: 0;
     }
   }
+  @include breakpoint-mi(map-get($bp, 'md')){
+    border-bottom: 1px solid map-get($border-color, 'normal');
+  }
   &-nav {
     color: $brand-color;
-    border-top: 1px solid map-get($border-color, normal);
-    border-bottom: 1px solid map-get($border-color, normal);
+    @include breakpoint-ma((map-get($bp, 'md') - 1)){
+      border-top: 1px solid map-get($border-color, 'normal');
+      border-bottom: 1px solid map-get($border-color, 'normal');
+    }
+    @include breakpoint-mi(map-get($bp, 'md')){
+      width: em(460);
+      float: right;
+      border-left: 1px solid map-get($border-color, 'normal');
+    }
     .abc {
       &-home,
       &-user { @include visible(350); }
     } 
     a { color: $brand-color; }
-    ul { letter-spacing: -0.34em; }
+    ul {
+      display: table;
+      width: 100%;
+    }
     li {
-      width: 50%;
       padding: map-get($head-padding, sm) (map-get($head-padding, sm) / 2);
-      display: inline-block;
-      vertical-align: top;
-      letter-spacing: 0;
-      box-sizing: border-box;
-      border-right: 1px solid map-get($border-color, normal);
-      @include breakpoint-ma(600){
-        .my-homepage { width: 46%; }
-        .my-login { width: 54%; }
+      display: table-cell;
+      vertical-align: middle;
+      border-right: 1px solid map-get($border-color, 'normal');
+      @include breakpoint-ma((map-get($bp, 'md') - 1)){
         &:last-child { border-right-width: 0; }
+      }
+      @include breakpoint-mi(map-get($bp, 'md')){
+        height: em(47);
+        padding: map-get($head-padding, lg);
       }
       span {
         display: inline-block;
@@ -46,7 +58,7 @@ body { background-color: #f7f8fa; }
     }
   }
   .icons-circle { @extend %global-transition; }
-  @include breakpoint-ma(map-get($bp, xs)) {
+  @include breakpoint-ma(430) {
     .icons-circle {
       width: map-get($icon-wrap-size, sm);
       height: map-get($icon-wrap-size, sm);
@@ -55,9 +67,19 @@ body { background-color: #f7f8fa; }
       }
     }
     .icons-md { font-size: map-get($icon-size, sm); }
+    .icons-rect {
+      width: 20px;
+      height: 20px;
+      &:before {
+        line-height: 20px;
+      }
+    }
   }
 }
 .branding {
+  @include breakpoint-mi(map-get($bp, 'md')){
+    float: left;
+  }
   > a {
     @extend %global-transition;
     display: block;
@@ -69,7 +91,7 @@ body { background-color: #f7f8fa; }
 }
 .nav-title {
   @include type(15px 700 1.15 uppercase);
-  @include breakpoint-ma(map-get($bp, xs)){
+  @include breakpoint-ma(430){
     @include type(12px);
   }
   small { 

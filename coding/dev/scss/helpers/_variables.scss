@@ -4,22 +4,25 @@
 // layout
 $global-gutter: 3.45%;
 $layout: (
-  container: 1024px, 
-  columns: 12,
-  gutter: $global-gutter,
+  'container': 1024px, 
+  'columns': 12,
+  'gutter': $global-gutter,
 );
 $bp: (
-  xs: 430,
-  lg: 1024,
+  'head-nav': 440,
+  'head-layout': 1024,
+  'foot-layout': 1070,
+  'md': 768,
+  'lg': 1024,
 );
 
 // margins and paddings
 $head-padding: (
-  sm: em(14),
-  lg: em(20),
+  'sm': em(14),
+  'lg': em(20),
 );
 $panel-padding: (
-  head: em(15) em(20),
+  'head': em(15) em(20),
 );
 
 // z-index
@@ -31,13 +34,13 @@ $global-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
 // icon
 $icon-path: '../abc-icons/fonts/';
 $icon-wrap-size: (
-  sm: 26px,
-  lg: 36px,
+  'sm': 26px,
+  'lg': 36px,
 );
 $icon-size: (
-  sm: 16px,
-  md: 22px,
-  lg: 30px,
+  'sm': 16px,
+  'md': 22px,
+  'lg': 30px,
 );
 
 // font
@@ -52,24 +55,24 @@ $brand-color: #2c3754;
 $text-color: #212121;
 $border-color: #e1e1e1;
 $social: (
-  facebook-like: #4660b5, 
-  facebook: #39579a, 
-  twitter: #23cbff, 
-  pinterest: #df2109, 
-  google: #567EF0, 
-  google-plus: #DA4835, 
-  linkedin: #005987, 
-  rss: #EF922F, 
-  email: #1D90DD, 
-  primary: #0078E7
+  'facebook-like': #4660b5, 
+  'facebook': #39579a, 
+  'twitter': #23cbff, 
+  'pinterest': #df2109, 
+  'google': #567EF0, 
+  'google-plus': #DA4835, 
+  'linkedin': #005987, 
+  'rss': #EF922F, 
+  'email': #1D90DD, 
+  'primary': #0078E7
 ) !default;
 $alerts:(
-  success: #3A945B,
-  info: #2270C1,
-  warning: #DE770F,
-  alert: #DE2D0F
+  'success': #3A945B,
+  'info': #2270C1,
+  'warning': #DE770F,
+  'alert': #DE2D0F
 ) !default;
 $border-color: (
-  normal: #e4e4e4,
+  'normal': #e4e4e4,
 );
 

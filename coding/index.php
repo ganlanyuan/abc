@@ -8,8 +8,10 @@
   <div class="banner">
     <img src="assets/img/home-banner.jpg" alt="">
     <div class="banner-content">
-      <h2 class="">ABC institute</h2>
-      <h3>Educating the leaders of tomorrow!</h3>
+      <div class="inner">
+        <h2 class="">ABC institute</h2>
+        <h3>Educating the leaders of tomorrow!</h3>
+      </div>
     </div>
   </div>
   <div class="clearfix">
