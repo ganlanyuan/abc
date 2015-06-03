@@ -848,6 +848,16 @@ body {
   background-color: #fff;
   border: 1px solid #e4e4e4;
   border-bottom: 2px solid #2c3754;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-heading > h3,
+.panel-heading > span,
+.panel-heading > a {
+  vertical-align: middle;
+}
+.panel-heading h3 {
+  display: inline-block;
 }
 .panel-body {
   border: 1px solid #e4e4e4;
@@ -864,6 +874,10 @@ body {
 .panel-body .wider li {
   padding-top: 1.875em;
   padding-bottom: 1.875em;
+}
+.panel-bottom {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .panel-media-left > .media {
   padding-right: 0.5em;

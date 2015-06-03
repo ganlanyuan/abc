@@ -21,7 +21,7 @@
         <h3>Announcements</h3>
         <a href="" class="button button-primary">View all</a>
       </div>
-      <div class="panel-body">
+      <div class="panel-body panel-bottom">
         <ul class="wider">
           <li><a href="">
             <div class="cell-group">
@@ -74,7 +74,7 @@
           </li>
         </ul>
       </div>
-      <div class="view-term">
+      <div class="view-term panel-bottom">
         <h4>View Another Term</h4>
         <form action="">
           <select name="" id="">
