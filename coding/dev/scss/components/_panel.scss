@@ -3,6 +3,7 @@
 
 .panel {
   position: relative;
+  margin-bottom: $global-gutter;
   &-head,
   &-foot {
     padding: map-get($panel-padding, 'head');
@@ -36,7 +37,16 @@
     border: 1px solid $border-color;
     border-top-width: 0;
     background-color: $background-color;
-    li {
+    &:first-of-type {
+      border-bottom-left-radius: $panel-radius;
+      border-bottom-right-radius: $panel-radius;
+    }
+    & ~ & { 
+      margin-top: 10px; 
+      border-top: 1px solid $border-color;
+      border-radius: $panel-radius;
+    }
+    .styled li {
       padding: map-get($panel-padding, 'head');
       border-bottom: 1px solid $border-color;
       &:last-child { border-bottom-width: 0; }

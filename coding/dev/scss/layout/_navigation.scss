@@ -73,8 +73,13 @@
   &__menu {
     display: block;
     padding: em(10, 20) em(20, 20);
-    border-bottom: 1px solid $border-color;
+    border: 1px solid $border-color;
+    border-radius: $panel-radius;
     background-color: #fff;
+    #sub-nav-checkbox:checked ~ & {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
     [class^='abc-'] {
       font-size: 20px;
       &:before { line-height: 20px; }

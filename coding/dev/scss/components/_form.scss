@@ -1,0 +1,26 @@
+// form
+// ============
+
+%form-base {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid $border-color;
+  border-radius: $panel-radius;
+}
+input {
+  @extend %form-base;
+  background-color: #f7f8fa;
+} 
+textarea {
+  @extend %form-base;
+  line-height: 1.33;
+}
+form li {
+  margin-bottom: em(20);
+  &:last-child { margin-bottom: 0; }
+}
+
+.full { 
+  width: 100%; 
+  box-sizing: border-box;
+}

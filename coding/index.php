@@ -22,7 +22,7 @@
         <a href="" class="button button-alert">View all</a>
       </div>
       <div class="panel-body panel-bottom">
-        <ul class="wider">
+        <ul class="wider styled">
           <li><a href="">
             <div class="cell-group">
               <span class="cell"><span class="abc-speaker icons-fill icons-sm"></span></span>
@@ -50,7 +50,7 @@
         <h3 class="heading3">My Courses: Winter 2015</h3>
       </div>
       <div class="panel-body">
-        <ul>
+        <ul class="styled">
           <li>
             <div class="cell-group">
               <span class="cell"><span class="abc-calendar icons-fill icons-sm"></span></span>
