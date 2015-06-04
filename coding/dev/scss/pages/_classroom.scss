@@ -2,7 +2,7 @@
 // =============
 
 .nav-left {
-  @include breakpoint-mi(1000) {
+  @include breakpoint('min' 1000) {
     .sub-nav { 
       @include span(24 of 100); 
       li:first-child {
@@ -30,7 +30,7 @@
     .main { @include span(76 of 100 last); }
     .sub-nav__menu { display: none; }
   }
-  @include breakpoint-ma(999) {
+  @include breakpoint('max' 999) {
     .sub-nav {
       ul { display: none; }
       @at-root { #sub-nav-checkbox:checked ~ ul { display: block; } }

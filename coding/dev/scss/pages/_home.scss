@@ -4,7 +4,7 @@
 .banner {
   position: relative;
   margin-bottom: $global-gutter;
-  @include breakpoint-ma((map-get($bp, 'md') - 1)){
+  @include breakpoint('max' (map-get($bp, 'md') - 1)){
     margin-bottom: em(20);
   }
   &-content {
@@ -17,22 +17,22 @@
     color: #fff;
     h2 { @extend %global-transition; @include type(24px 600 1.2); }
     h3 { @extend %global-transition; @include type(14px 400 1.2); }
-    @include breakpoint-mi(480){
+    @include breakpoint('min' 480){
       h2 { @include type(32px 600 1.2); }
       h3 { @include type(18px 400 1.2); }
     }
-    @include breakpoint-mi(670){
+    @include breakpoint('min' 670){
       h2 { @include type(40px 600 1.2); }
       h3 { @include type(20px 400 1.2); }
     }
-    @include breakpoint-mi(900){
+    @include breakpoint('min' 900){
       h2 { @include type(47px 600 1.2); }
       h3 { @include type(21px 400 1.2); }
     }
   }
 }
 .home {
-  @include breakpoint-mi(1000){
+  @include breakpoint('min' 1000){
     &-main { @include span(6 of 10 $global-gutter); }
     &-aside { @include span(4 of 10 $global-gutter last); }
   }

@@ -7,7 +7,7 @@ body { background-color: #f7f8fa; }
 .head {
   background-color: #fff;
   margin-bottom: $global-gutter;
-  @include breakpoint-ma((map-get($bp, 'md') - 1)){
+  @include breakpoint('max' (map-get($bp, 'md') - 1)){
     text-align: center;
     margin-bottom: 20px;
     .container {
@@ -15,29 +15,29 @@ body { background-color: #f7f8fa; }
       padding-right: 0;
     }
   }
-  @include breakpoint-mi(map-get($bp, 'md')){
+  @include breakpoint('min' map-get($bp, 'md')){
     border-bottom: 1px solid $border-color;
   }
   .branding {
-    @include breakpoint-mi(map-get($bp, 'md')){
+    @include breakpoint('min' map-get($bp, 'md')){
       float: left;
     }
     > a {
       @extend %global-transition;
       display: block;
       padding: map-get($head-padding, sm) 0;
-      @include breakpoint-mi(768) {
+      @include breakpoint('min' 768) {
         padding: map-get($head-padding, lg) 0;
       }
     }
   }
   &-nav {
     color: $brand-color;
-    @include breakpoint-ma((map-get($bp, 'md') - 1)){
+    @include breakpoint('max' (map-get($bp, 'md') - 1)){
       border-top: 1px solid $border-color;
       border-bottom: 1px solid $border-color;
     }
-    @include breakpoint-mi(map-get($bp, 'md')){
+    @include breakpoint('min' map-get($bp, 'md')){
       width: em(460);
       float: right;
       border-left: 1px solid $border-color;
@@ -61,10 +61,10 @@ body { background-color: #f7f8fa; }
         text-align: left;
         z-index: map-get($z-index, 'head-user-pannel');
       }
-      @include breakpoint-ma((map-get($bp, 'md') - 1)){
+      @include breakpoint('max' (map-get($bp, 'md') - 1)){
         &:last-child { border-right-width: 0; }
       }
-      @include breakpoint-mi(map-get($bp, 'md')){
+      @include breakpoint('min' map-get($bp, 'md')){
         height: em(47);
         padding: map-get($head-padding, 'lg');
         .user-panel { margin-top: 23px; right: -1px; }
@@ -77,7 +77,7 @@ body { background-color: #f7f8fa; }
     }
   }
   .icons-circle { @extend %global-transition; }
-  @include breakpoint-ma(430) {
+  @include breakpoint('max' 430) {
     .icons-circle {
       width: map-get($icon-wrap-size, 'sm');
       height: map-get($icon-wrap-size, 'sm');
@@ -116,7 +116,7 @@ body { background-color: #f7f8fa; }
 }
 .nav-title {
   @include type(15px 700 1.15 uppercase);
-  @include breakpoint-ma(430){
+  @include breakpoint('max' 430){
     @include type(12px);
   }
   small { 

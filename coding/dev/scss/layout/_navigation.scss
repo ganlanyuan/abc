@@ -22,8 +22,8 @@
     &.current,
     &:hover { background-color: map-get($button, 'danger'); }
   }
-  @include breakpoint-ma((map-get($bp, 'md') - 1)) { margin-bottom: em(20); }
-  @include breakpoint-mi(600) {
+  @include breakpoint('max' (map-get($bp, 'md') - 1)) { margin-bottom: em(20); }
+  @include breakpoint('min' 600) {
     label { display: none; }
     ul {
       display: table;
@@ -34,7 +34,7 @@
       display: table-cell;
     }
   }
-  @include breakpoint-ma(599) {
+  @include breakpoint('max' 599) {
     .container { padding-left: 0; padding-right: 0; }
     ul { display: none; }
     @at-root {

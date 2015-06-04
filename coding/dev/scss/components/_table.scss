@@ -25,7 +25,7 @@ th {
     > tbody > tr:nth-of-type(odd) { background: #f6f6f6; }
   }
   // Force table to not be like tables anymore
-  @include breakpoint-ma(640)  {
+  @include breakpoint('max' 640)  {
     &-responsive {
       &, thead, tbody, th, td, tr {
         display: block; 

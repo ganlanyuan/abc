@@ -5,38 +5,38 @@
   margin-top: em(20);
   border-top: 1px solid $border-color;
   background-color: #fff;
-  @include breakpoint-ma((map-get($bp, 'foot-layout') - 1)){
+  @include breakpoint('max' (map-get($bp, 'foot-layout') - 1)){
     .container { 
       padding-left: 0;
       padding-right: 0;
     }
   }
-  @include breakpoint-mi(map-get($bp, 'lg')){ margin-top: em(40); }
+  @include breakpoint('min' map-get($bp, 'lg')){ margin-top: em(40); }
   &-nav {
     font-size: 15px;
     font-style: normal;
     border-bottom: 1px solid $border-color;
-    @include breakpoint-mi(map-get($bp, 'foot-layout')){
+    @include breakpoint('min' map-get($bp, 'foot-layout')){
       float: left;
       border-bottom-width: 0;
     }
     ul { 
       letter-spacing: -0.34em; 
-      @include breakpoint-mm(890 1069){
+      @include breakpoint(890 1069){
         text-align: center;
       }
     }
     li {
       letter-spacing: 0;
       margin: map-get($head-padding, 'lg') $global-gutter;
-      @include breakpoint-mi(890){
+      @include breakpoint('min' 890){
         display: inline-block;
         margin: 0;
         padding: map-get($head-padding, 'lg') (map-get($head-padding, 'lg') * 1.5);
         border-right: 1px solid $border-color;
         &:last-child { border-right-width: 0; }
       }
-      @include breakpoint-mi(map-get($bp, 'foot-layout')){
+      @include breakpoint('min' map-get($bp, 'foot-layout')){
         float: left;
         display: block;
         &:first-child { padding-left: 0; }
@@ -55,7 +55,7 @@
     font-size: 15px; 
     text-align: center;
     padding: map-get($head-padding, 'lg') 0;
-    @include breakpoint-mi(map-get($bp, 'foot-layout')){
+    @include breakpoint('min' map-get($bp, 'foot-layout')){
       float: right;
       line-height: 40px;
     }

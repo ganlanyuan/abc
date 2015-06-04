@@ -14,7 +14,7 @@
     margin-right: .6em;
   }
 }
-@include breakpoint-mi(880) {
+@include breakpoint('min' 880) {
   .search-students {
     float: left;
   }
@@ -25,7 +25,7 @@
     .panel-foot [data-aside] { float: right; }
   }
 }
-@include breakpoint-ma(879) {
+@include breakpoint('max' 879) {
   .search-students {
     margin-bottom: em(15);
     .heading4 {
@@ -39,7 +39,7 @@
     .panel-foot [data-aside] { margin-bottom: em(20, 14); }
   }
 }
-@include breakpoint-ma(400) {
+@include breakpoint('max' 400) {
   .actions {
     .button {
       width: 100%;
