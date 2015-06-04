@@ -1,0 +1,28 @@
+// discussion
+// =============
+
+.circle-number {
+  counter-reset: circle-number;
+  li {
+    margin: em(20, 15) 0;
+    &:before {
+      @include type(18px 700);
+      counter-increment: circle-number;
+      content: counter(circle-number);
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-right: em(15, 18);
+      line-height: 32px;
+      text-align: center;
+      border: 2px solid $brand-color;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+}
+.action-line {
+  margin-bottom: em(5);
+  .button { margin-bottom: 5px; }
+  .current { background-color: map-get($button, 'danger'); }
+}

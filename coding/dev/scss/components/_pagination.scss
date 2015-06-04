@@ -15,8 +15,8 @@
     }
     &.current {
       color: #fff;
-      background-color: map-get($button, 'alert');
-      border-color: map-get($button, 'alert');
+      background-color: map-get($button, 'danger');
+      border-color: map-get($button, 'danger');
     }
   }
 }

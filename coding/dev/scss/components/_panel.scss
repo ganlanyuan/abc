@@ -2,6 +2,7 @@
 // ============
 
 .panel {
+  position: relative;
   &-head,
   &-foot {
     padding: map-get($panel-padding, 'head');
@@ -12,6 +13,9 @@
     border-bottom: 2px solid $brand-color;
     border-top-left-radius: $panel-radius;
     border-top-right-radius: $panel-radius;
+    .panel-table & {
+      border-bottom: 1px solid $border-color;
+    }
     > h3,
     > span,
     > a { vertical-align: middle; }
@@ -45,6 +49,10 @@
       margin-bottom: em(15, 14);
       [class^='abc-'] { margin-right: 0.5em; }
     }
+    table .heading4 { 
+      margin-bottom: 0; 
+      color: $brand-color;
+    }
   }
   .inner {
     padding: map-get($panel-padding, 'body');
@@ -63,6 +71,12 @@
     padding-right: 0.5em; 
     &:last-child { padding-right: 0; }
     &.right { text-align: right; }
+  }
+  p { color: $minor; }
+  .floated {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
   }
 }
 

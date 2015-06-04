@@ -5,7 +5,7 @@
   margin-bottom: $global-gutter;
   color: #fff;
   background-color: $brand-color;
-  border-top: 2px solid map-get($button, 'alert');
+  border-top: 2px solid map-get($button, 'danger');
   a, label {
     display: block;
     padding: 16px;
@@ -20,7 +20,7 @@
     @extend %global-transition;
     @include type(15px 600 1 uppercase);
     &.current,
-    &:hover { background-color: map-get($button, 'alert'); }
+    &:hover { background-color: map-get($button, 'danger'); }
   }
   @include breakpoint-ma((map-get($bp, 'md') - 1)) { margin-bottom: em(20); }
   @include breakpoint-mi(600) {
@@ -35,7 +35,7 @@
     }
   }
   @include breakpoint-ma(599) {
-    .container { margin-left: 0; margin-right: 0; }
+    .container { padding-left: 0; padding-right: 0; }
     ul { display: none; }
     @at-root {
       #main-nav-checkbox:checked ~ ul { display: block; }
@@ -49,23 +49,26 @@
 .sub-nav {
   margin-bottom: em(20);
   background-color: $background-color;
-  border: 1px solid $border-color;
-  border-bottom-width: 0;
   border-radius: $panel-radius;
-  overflow: hidden;
   a {
-    @extend %global-transition;
-    @include type(14px 700 uppercase);
     display: block;
     color: $minor;
     padding: map-get($panel-padding, 'head');
-    border-bottom: 1px solid $border-color;
   }
-  .current > a,
-  a:hover {
-    color: contrast($brand-color);
-    background-color: $brand-color;
-    border-color: $brand-color;
+  li {
+    @extend %global-transition;
+    @include type(14px 700 uppercase);
+    border: 1px solid $border-color;
+    border-top-width: 0;
+    &:last-child {
+      border-bottom-left-radius: $panel-radius;
+      border-bottom-right-radius: $panel-radius;
+    }
+    &:hover, &.current {
+      a { color: contrast($brand-color); }
+      background-color: $brand-color;
+      border-color: $brand-color;
+    }
   }
   &__menu {
     display: block;

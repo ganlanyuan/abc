@@ -1,12 +1,31 @@
 // classroom
 // =============
 
-// 1. prevent sub-nav border break the layout
 .nav-left {
   @include breakpoint-mi(1000) {
     .sub-nav { 
       @include span(24 of 100); 
-      box-sizing: border-box; // 1
+      li:first-child {
+        border-top-width: 1px;
+        border-top-left-radius: $panel-radius;
+        border-top-right-radius: $panel-radius;
+      }
+      .current {
+        position: relative;
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: -6px;
+          top: 50%;
+          margin-top: -6px;
+          width: 0;
+          height: 0;
+          border-width: 6px 0 6px 6px;
+          border-style: solid;
+          border-color: transparent transparent transparent $brand-color;
+        }
+      }
     }
     .main { @include span(76 of 100 last); }
     .sub-nav__menu { display: none; }

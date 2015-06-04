@@ -24,4 +24,57 @@ th {
   &-striped {
     > tbody > tr:nth-of-type(odd) { background: #f6f6f6; }
   }
+  // Force table to not be like tables anymore
+  @include breakpoint-ma(640)  {
+    &-responsive {
+      &, thead, tbody, th, td, tr {
+        display: block; 
+      }
+      // Hide table headers (but not display: none;, for accessibility)
+      thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr:last-of-type td { 
+        border-bottom-width: 1px; 
+        &:last-of-type { border-bottom-width: 0; }
+      }
+      // Behave  like a "row"
+      td { 
+        position: relative;
+        padding-left: 55%; 
+        border-right-width: 0;
+        // Now like a table header
+        &:before { 
+          @include type(15px 600 uppercase); 
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          padding: map-get($panel-padding, 'head');
+          width: 50%; 
+          height: 100%;
+          padding-right: 10px; 
+          color: $brand-color;
+          // white-space: nowrap;
+          border-right: 1px solid $border-color;
+          box-sizing: border-box;
+        }
+      }
+    }
+    // Label the data
+    &-student {
+      td:nth-of-type(1):before { content: "First Name"; }
+      td:nth-of-type(2):before { content: "Last Name"; }
+      td:nth-of-type(3):before { content: "Student Id"; }
+      td:nth-of-type(4):before { content: ""; }
+    }
+    &-thread {
+      td:nth-of-type(1):before { content: "Thread / thread Starter"; }
+      td:nth-of-type(2):before { content: "latest post"; }
+      td:nth-of-type(3):before { content: "replies"; }
+      td:nth-of-type(4):before { content: "views"; }
+    }
+  }
 }

@@ -1,13 +1,10 @@
 // database
 // =============
 
-.database {
+.with-main-nav {
   .head {
     margin-bottom: 0;
     border-bottom-width: 0;
-  }
-  .panel {
-    &-head { border-bottom: 1px solid $border-color; }
   }
 }
 .search-students {
@@ -51,53 +48,6 @@
       &:first-of-type {
         margin-bottom: em(10, 14);
       }
-    }
-  }
-}
-@include breakpoint-ma(500)  {
-  // Force table to not be like tables anymore
-  .table {
-    &-responsive {
-      &, thead, tbody, th, td, tr {
-        display: block; 
-      }
-      // Hide table headers (but not display: none;, for accessibility)
-      thead tr { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
-      tr:last-of-type td { 
-        border-bottom-width: 1px; 
-        &:last-of-type { border-bottom-width: 0; }
-      }
-      // Behave  like a "row"
-      td { 
-        position: relative;
-        padding-left: 55%; 
-        border-right-width: 0;
-        // Now like a table header
-        &:before { 
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: inline-block;
-          padding: map-get($panel-padding, 'head');
-          width: 50%; 
-          padding-right: 10px; 
-          white-space: nowrap;
-          border-right: 1px solid $border-color;
-          box-sizing: border-box;
-        }
-      }
-    }
-    &-student {
-      // Label the data
-      td:nth-of-type(1):before { content: "First Name"; }
-      td:nth-of-type(2):before { content: "Last Name"; }
-      td:nth-of-type(3):before { content: "Student Id"; }
-      td:nth-of-type(4):before { content: ""; }
-      td:last-of-type:before { height: 66px; }
     }
   }
 }

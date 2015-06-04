@@ -11,7 +11,7 @@
   &-normal { @include button(map-get($button, 'normal') 'hover'); }
   &-secondary { @include button(map-get($button, 'secondary') 'hover'); }
   &-success { @include button(map-get($button, 'success') 'hover'); color: #fff; }
-  &-alert { @include button(map-get($button, 'alert') 'hover'); }
+  &-alert { @include button(map-get($button, 'danger') 'hover'); }
   &-line {
     font-weight: normal;
     color: #fff;
