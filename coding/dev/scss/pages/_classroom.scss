@@ -1,8 +1,20 @@
 // classroom
 // =============
 
+// 1. prevent sub-nav border break the layout
 .nav-left {
-  @include breakpoint-mi(768) {
-    @include two-columns(left 270px gutter 40px);
+  @include breakpoint-mi(1000) {
+    .sub-nav { 
+      @include span(24 of 100); 
+      box-sizing: border-box; // 1
+    }
+    .main { @include span(76 of 100 last); }
+    .sub-nav__menu { display: none; }
+  }
+  @include breakpoint-ma(999) {
+    .sub-nav {
+      ul { display: none; }
+      @at-root { #sub-nav-checkbox:checked ~ ul { display: block; } }
+    }
   }
 }

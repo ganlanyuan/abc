@@ -13,6 +13,6 @@
 }
 
 .p, 
-p { @include type(15px 1.3); }
+p { @include type(15px 1.33); }
 p { margin-bottom: 1em; }
 .minor { color: $minor; }

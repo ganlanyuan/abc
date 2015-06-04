@@ -22,10 +22,16 @@
   &-foot {
     border-top-width: 0;
   }
+  &-pure {
+    margin-bottom: $global-gutter;
+    padding: map-get($panel-padding, 'head');
+    background-color: #fff;
+    border: 1px solid $border-color;
+  }
   &-body {
     border: 1px solid $border-color;
     border-top-width: 0;
-    background-color: #f2f2f2;
+    background-color: $background-color;
     li {
       padding: map-get($panel-padding, 'head');
       border-bottom: 1px solid $border-color;
@@ -34,6 +40,10 @@
     .wider li {
       padding-top: em(30);
       padding-bottom: em(30);
+    }
+    .heading4 {
+      margin-bottom: em(15, 14);
+      [class^='abc-'] { margin-right: 0.5em; }
     }
   }
   .inner {
@@ -54,4 +64,24 @@
     &:last-child { padding-right: 0; }
     &.right { text-align: right; }
   }
+}
+
+.icons {
+  margin-bottom: em(15);
+  @include breakpoint-mi(640) { float: right; }
+  .button, span { vertical-align: middle; }
+  [class^='abc-'] {
+    @extend %global-transition;
+    padding: 6px 10px;
+    background-color: darken($background-color, 10%);
+    border-radius: $panel-radius;
+    cursor: pointer;
+    &:hover { background-color: darken($background-color, 20%); }
+  }
+}
+
+.file-name a {
+  font-size: 13px;
+  color: #2382ef;
+  &:hover { text-decoration: underline; }
 }

@@ -6,7 +6,6 @@
   color: #fff;
   background-color: $brand-color;
   border-top: 2px solid map-get($button, 'alert');
-  [type="checkbox"] { display: none; }
   a, label {
     display: block;
     padding: 16px;
@@ -16,7 +15,7 @@
     font-size: 20px;
     text-align: center;
   }
-  [class^="abc-"] { line-height: 20px; }
+  [class^="abc-"]:before { line-height: 20px; }
   li {
     @extend %global-transition;
     @include type(15px 600 1 uppercase);
@@ -43,6 +42,39 @@
     }
     li {
       border-top: 1px solid #374362;
+    }
+  }
+}
+
+.sub-nav {
+  margin-bottom: em(20);
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  border-bottom-width: 0;
+  border-radius: $panel-radius;
+  overflow: hidden;
+  a {
+    @extend %global-transition;
+    @include type(14px 700 uppercase);
+    display: block;
+    color: $minor;
+    padding: map-get($panel-padding, 'head');
+    border-bottom: 1px solid $border-color;
+  }
+  .current > a,
+  a:hover {
+    color: contrast($brand-color);
+    background-color: $brand-color;
+    border-color: $brand-color;
+  }
+  &__menu {
+    display: block;
+    padding: em(10, 20) em(20, 20);
+    border-bottom: 1px solid $border-color;
+    background-color: #fff;
+    [class^='abc-'] {
+      font-size: 20px;
+      &:before { line-height: 20px; }
     }
   }
 }

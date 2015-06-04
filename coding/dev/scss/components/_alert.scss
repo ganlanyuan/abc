@@ -1,0 +1,20 @@
+// alert
+// ============
+
+%alert {
+  @include button(15px '1em 1.3em' radius);
+  display: block;
+  margin-bottom: $global-gutter;
+  color: $minor;
+  border-style: solid;
+  border-width: 1px;
+}
+.alert {
+  @each $item in 'success', 'info', 'warning', 'danger' {
+    &-#{$item} {
+      @extend %alert;
+      border-color: map-get($alerts, $item);
+      background-color: lighten(map-get($alerts, $item), 10%);
+    }
+  }
+}

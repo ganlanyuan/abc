@@ -5,29 +5,26 @@
 <?php include 'part/header.php'; ?>
 
 <div class="container">
-  <div class="content nav-left">
-    <div data-col-aside="">
-      <?php include 'part/sub-nav.php'; ?>
-    </div>
-    <div data-col-main="">
+  <div class="content nav-left clearfix">
+    <?php include 'part/sub-nav.php'; ?>
+    <div class="main">
       <div class="panel">
         <div class="panel-head">
           <span class="abc-home icons-lg"></span>
           <h3 class="heading3">course home: <span class="small">economics 302: global trends</span></h3>
         </div>
         <div class="panel-body inner">
-          <header>
-            <div class="icons">
-              <button class="button button-success">Edit</button>
-              <button class="button button-alert">Delete</button>
-              <span class="abc-arrow-down"></span>
-              <span class="abc-arrow-up"></span>
-            </div>
-          </header>
+          <div class="icons">
+            <button class="button button-success">Edit</button>
+            <button class="button button-alert">Delete</button>
+            <span class="abc-arrow-down"></span>
+            <span class="abc-arrow-up"></span>
+          </div>
           <h4 class="heading4 minor"><span class="abc-speaker icons-fill icons-sm"></span>economics 302: global trends</h4>
           <p class="minor">Dear Students:</p>
           <p class="minor">The midterm will be next Wednesday. Remember, it counts for 30% of your grade. If you have any questions, please visit my office hours at 2PM on Tuesday.</p>
           <p class="minor">Good luck!</p>
+          <div class="file-name"><a href="">GarlicFries_927x365.jpg</a></div>
         </div>
         <div class="panel-body inner">
           <header>

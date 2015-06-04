@@ -10,8 +10,8 @@
     border: 1px solid $border-color;
     color: $minor;
     &:hover {
-      background-color: #f2f2f2;
-      border-color: #f2f2f2;
+      background-color: $background-color;
+      border-color: $background-color;
     }
     &.current {
       color: #fff;
