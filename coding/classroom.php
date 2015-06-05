@@ -71,7 +71,7 @@
             <ul>
               <li><input type="text" name="" id="" placeholder="Title" class="full"></li>
               <li></li>
-              <li><textarea name="" id="" cols="30" rows="10" class="full"></textarea></li>
+              <li><textarea name="editor" id="editor" cols="30" rows="10" class="full">Sample text goes here ...</textarea></li>
               <li><input type="file" name="" id=""></li>
               <li><button class="button button-alert">Create</button></li>
             </ul>
@@ -83,5 +83,9 @@
 </div>
 
 <?php include 'part/footer.php'; ?>
+<!-- CKEditor -->
+<script>
+  CKEDITOR.replace('editor');
+</script>
 </body>
 </html>

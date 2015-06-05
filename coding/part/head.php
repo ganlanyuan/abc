@@ -47,6 +47,15 @@
 		<script src="assets/cross-domain/respond.proxy.js"></script>	
 	<![endif]-->
 
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<!-- CKEditor 
+			http://ckeditor.com/
+			http://docs.ckeditor.com/#!/guide
+			/*1. full version
+			/*2. basic version
+			-->
+	<!-- <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script> /*1 -->
+	<!-- <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js"></script> /*2 -->
+	<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+	
 	<script src="assets/js/script.js"></script>
 </head>
