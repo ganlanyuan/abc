@@ -14,7 +14,7 @@
     margin-right: .6em;
   }
 }
-@include breakpoint('min' 880) {
+@include breakpoint('min' 930) {
   .search-students {
     float: left;
   }
@@ -25,21 +25,21 @@
     .panel-foot [data-aside] { float: right; }
   }
 }
-@include breakpoint('max' 879) {
+@include breakpoint('max' 929) {
   .search-students {
     margin-bottom: em(15);
-    .heading4 {
+    > .heading4 {
       display: block;
       margin-bottom: 5px;
     }
-    [type="search"] { width: calc(100% - 60px - 59px); }
-    [type="submit"] { float: right; }
+    > [type="search"] { width: calc(100% - 60px - 59px); }
+    .csscalc & > [type="submit"] { float: right; }
   }
   .database {
     .panel-foot [data-aside] { margin-bottom: em(20, 14); }
   }
 }
-@include breakpoint('max' 400) {
+@include breakpoint('max' 440) {
   .actions {
     .button {
       width: 100%;

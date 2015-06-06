@@ -10,7 +10,7 @@
     <div class="main">
       <div class="alert-danger">Discussion: Economics 302: Global Trends  /  Week 1 : Globalization</div>
       <div class="panel panel-pure">
-        <button class="button button-normal floated">Edit</button>
+        <button class="button button-normal floated"><span class="abc-pencil"></span>Edit</button>
         <p>Dear Students: <br /><strong>Please do the following in this discussion board</strong></p>
         <ol class="circle-number">
           <li class="heading4">Find an article relevant to globalization</li>
@@ -27,7 +27,7 @@
       </div>
       <div class="panel panel-table">
         <div class="panel-head">
-          <span class="abc- icons-lg"></span>
+          <span class="abc-network icons-lg"></span>
           <h3 class="heading3">week 1: globalization: thread list</h3>
         </div>
         <div class="panel-body">
@@ -79,7 +79,6 @@
     </div>
   </div>
 </div>
-
 <?php include 'part/footer.php'; ?>
 </body>
 </html>

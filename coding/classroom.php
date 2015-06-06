@@ -15,8 +15,8 @@
         </div>
         <div class="panel-body inner">
           <div class="icons">
-            <button class="button button-success">Edit</button>
-            <button class="button button-alert">Delete</button>
+            <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
+            <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
             <span class="abc-arrow-down"></span>
             <span class="abc-arrow-up"></span>
           </div>
@@ -29,8 +29,8 @@
         <div class="panel-body inner">
           <header>
             <div class="icons">
-              <button class="button button-success">Edit</button>
-              <button class="button button-alert">Delete</button>
+              <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
+              <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
@@ -46,8 +46,8 @@
         <div class="panel-body inner">
           <header>
             <div class="icons">
-              <button class="button button-success">Edit</button>
-              <button class="button button-alert">Delete</button>
+              <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
+              <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
@@ -63,7 +63,7 @@
       </div>
       <div class="panel">
         <div class="panel-head">
-          <span class="abc-"></span>
+        <span class="abc-read icons-lg"></span>
           <h3 class="heading3">create new course announcements</h3>
         </div>
         <div class="panel-body inner">
@@ -83,7 +83,15 @@
 </div>
 
 <?php include 'part/footer.php'; ?>
-<!-- CKEditor -->
+<!-- CKEditor 
+    http://ckeditor.com/
+    http://docs.ckeditor.com/#!/guide
+    /*1. full version
+    /*2. basic version
+    -->
+<!-- <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script> /*1 -->
+<!-- <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js"></script> /*2 -->
+<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
 <script>
   CKEDITOR.replace('editor');
 </script>

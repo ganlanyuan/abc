@@ -20,9 +20,8 @@
     > h3,
     > span,
     > a { vertical-align: middle; }
-    h3 {
-      display: inline-block;
-    }
+    h3 { display: inline-block; }
+    [class^='abc-'] { margin-right: 5px; }
   }
   &-foot {
     border-top-width: 0;
@@ -94,7 +93,7 @@
   margin-bottom: em(15);
   @include breakpoint('min' 640) { float: right; }
   .button, span { vertical-align: middle; }
-  [class^='abc-'] {
+  > [class^='abc-'] {
     @extend %global-transition;
     padding: 6px 10px;
     background-color: darken($background-color, 10%);

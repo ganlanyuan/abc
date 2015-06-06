@@ -6,6 +6,7 @@
   color: #fff;
   background-color: $brand-color;
   border-top: 2px solid map-get($button, 'danger');
+  @include breakpoint('max' (map-get($bp, 'md') - 1)) { margin-bottom: em(20); }
   a, label {
     display: block;
     padding: 16px;
@@ -15,15 +16,19 @@
     font-size: 20px;
     text-align: center;
   }
-  [class^="abc-"]:before { line-height: 20px; }
+  [class^="abc-"]:before {
+    margin-right: 4px; 
+    font-size: 20px;
+    line-height: 15px;
+    vertical-align: middle; 
+  }
   li {
     @extend %global-transition;
     @include type(15px 600 1 uppercase);
     &.current,
     &:hover { background-color: map-get($button, 'danger'); }
   }
-  @include breakpoint('max' (map-get($bp, 'md') - 1)) { margin-bottom: em(20); }
-  @include breakpoint('min' 600) {
+  @include breakpoint('min' 930) {
     label { display: none; }
     ul {
       display: table;
@@ -34,7 +39,7 @@
       display: table-cell;
     }
   }
-  @include breakpoint('max' 599) {
+  @include breakpoint('max' 929) {
     .container { padding-left: 0; padding-right: 0; }
     ul { display: none; }
     @at-root {
@@ -69,6 +74,12 @@
       background-color: $brand-color;
       border-color: $brand-color;
     }
+  }
+  [class^='abc-'] {
+    margin-right: 8px;
+    line-height: 15px;
+    font-size: 20px;
+    vertical-align: middle;
   }
   &__menu {
     display: block;

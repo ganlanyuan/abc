@@ -25,16 +25,14 @@
 	<link rel="shortcut icon" href="assets/favicon/favicon.png">
 
 	<!-- Prefetch DNS for external assets -->
-	<link href="https://fontastic.s3.amazonaws.com" rel="dns-prefetch">
+	<link href="http://fonts.googleapis.com" rel="dns-prefetch">
 	
-	<!-- Prefetch Resourses -->
-	<!-- <link href="sprite.png" rel="prefetch"> -->
-	<!-- <link href="webfont.woff" rel="prefetch"> -->
-	<!-- <link href="http://mydomain.com/my-next-page.htm" rel="prerender"> -->
-
 	<!-- css -->
+	<!-- <link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet"> icon-font, for test only-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-	<link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet">
+	<!--[if !IE]><!-->
+		<link href="assets/css/responsive-table.css" rel="stylesheet" >
+	<!--<![endif]-->
 	<link href="assets/css/main.css" rel="stylesheet" >
 
 	<!-- javascript -->
@@ -47,15 +45,5 @@
 		<script src="assets/cross-domain/respond.proxy.js"></script>	
 	<![endif]-->
 
-	<!-- CKEditor 
-			http://ckeditor.com/
-			http://docs.ckeditor.com/#!/guide
-			/*1. full version
-			/*2. basic version
-			-->
-	<!-- <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script> /*1 -->
-	<!-- <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js"></script> /*2 -->
-	<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
-	
 	<script src="assets/js/script.js"></script>
 </head>

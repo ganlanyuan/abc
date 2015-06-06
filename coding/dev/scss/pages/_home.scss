@@ -36,6 +36,12 @@
     &-main { @include span(6 of 10 $global-gutter); }
     &-aside { @include span(4 of 10 $global-gutter last); }
   }
+  &-main {
+    > .panel-head {
+      h3 { margin-right: 10px; }
+      > .button { @include breakpoint('min' 400) { float: right; } }
+    }
+  }
 }
 .view-term {
   form { 

@@ -3,8 +3,9 @@
 
 .foot {
   margin-top: em(20);
-  border-top: 1px solid $border-color;
   background-color: #fff;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   @include breakpoint('max' (map-get($bp, 'foot-layout') - 1)){
     .container { 
       padding-left: 0;

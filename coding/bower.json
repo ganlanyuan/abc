@@ -16,6 +16,7 @@
     "owl-carousel2": "*",
     "bourbon": "4.2.2",
     "inuit-normalize.css": "~3.0.1",
-    "rocket": "1.1.8"
+    "rocket": "2.0.0",
+    "background-size-polyfill": "~0.2.0"
   }
 }

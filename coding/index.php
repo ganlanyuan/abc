@@ -6,7 +6,8 @@
 
 <div class="container">
   <div class="banner">
-    <img src="assets/img/home-banner.jpg" alt="">
+    <img data-src-base='assets/img/' data-src="<768:home-banner-s.jpg, >768:home-banner.jpg" alt="">
+    <noscript><img src="assets/img/home-banner.jpg" alt=""></noscript>
     <div class="banner-content">
       <div class="inner">
         <h2 class="">ABC institute</h2>
@@ -46,7 +47,7 @@
     </div>
     <div class="panel home-aside">
       <div class="panel-head">
-        <span class="abc-speaker icons-lg"></span>
+        <span class="abc-read icons-lg"></span>
         <h3 class="heading3">My Courses: Winter 2015</h3>
       </div>
       <div class="panel-body">

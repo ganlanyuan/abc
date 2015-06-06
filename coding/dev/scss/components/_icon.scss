@@ -40,4 +40,5 @@
     }
   }
 }
-[class^='abc-caret-'] { font-size: 14px; }
+[class^='abc-caret-'] { font-size: em(14, 16); }
+.abc-calendar { font-size: em(13, 16); }

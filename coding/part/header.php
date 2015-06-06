@@ -12,7 +12,7 @@
           <span class="user-name">
             <span class="nav-title"><small>Logged in as</small><br />Michael Jones</span>
           </span>
-          <input type="checkbox" name="" id="user-panel-checkbox" class="hidden">
+          <input type="checkbox" name="" id="user-panel-checkbox" class="hidden-checkbox">
           <label for="user-panel-checkbox"><span class="abc-caret-down icons-rect"></span></label>
           <div class="user-panel">
             <a href="">Lorem ipsum</a>

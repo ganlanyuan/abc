@@ -24,3 +24,7 @@ form li {
   width: 100%; 
   box-sizing: border-box;
 }
+.hidden-checkbox {
+  position: absolute;
+  left: -9999em;
+}
