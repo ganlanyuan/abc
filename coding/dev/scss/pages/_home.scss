@@ -44,33 +44,11 @@
   }
 }
 .view-term {
-  form { 
-    @extend %clearfix; 
-    margin-top: em(8);
-  }
+  form { margin-top: em(8); }
   .select-wrap {
-    @include button($background-color radius);
-    position: relative;
-    display: inline-block;
-    padding: 0.4em 0.6em;
     width: calc(100% - 87px);
-    border: 1px solid $border-color;
-    overflow: hidden;
-    font-size: 14px;
-    box-sizing: border-box;
-    [class^='abc-'] {
-      display: inline-block;
-      position: absolute;
-      right: 6px;
-      top: 7px;
-      color: $minor;
-    }
     .no-csscalc & { width: 66%; }
-  }
-  select {
-    border-width: 0;
-    background-color: $background-color;
-    width: 120%;
+    select { width: 120%; }
   }
   input { 
     float: right; 

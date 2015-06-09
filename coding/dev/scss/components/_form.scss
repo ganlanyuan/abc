@@ -28,3 +28,43 @@ form li {
   position: absolute;
   left: -9999em;
 }
+
+.select-wrap {
+  @include button($background-color radius);
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 0.6em;
+  border: 1px solid $border-color;
+  overflow: hidden;
+  font-size: 14px;
+  box-sizing: border-box;
+  vertical-align: top;
+  [class^='abc-'] {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    color: $minor;
+  }
+  select {
+    border-width: 0;
+    background-color: $background-color;
+    width: 120%;
+  }
+}
+.line {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-width: 0;
+  }
+  .button { 
+    margin-left: 10px;
+    @include breakpoint('min' 380) {
+      float: right; 
+    }
+  }
+}

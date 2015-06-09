@@ -28,7 +28,7 @@
 	<link href="http://fonts.googleapis.com" rel="dns-prefetch">
 	
 	<!-- css -->
-	<!-- <link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet"> icon-font, for test only-->
+	 <link href="https://fontastic.s3.amazonaws.com/8foAJoAmddtgNKbed6ys7i/icons.css" rel="stylesheet"> 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<!--[if !IE]><!-->
 		<link href="assets/css/responsive-table.css" rel="stylesheet" >

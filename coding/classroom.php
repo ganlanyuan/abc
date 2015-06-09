@@ -24,7 +24,7 @@
           <p>Dear Students:</p>
           <p>The midterm will be next Wednesday. Remember, it counts for 30% of your grade. If you have any questions, please visit my office hours at 2PM on Tuesday.</p>
           <p>Good luck!</p>
-          <div class="file-name"><a href="">GarlicFries_927x365.jpg</a></div>
+          <div><a href="" class="file-name">GarlicFries_927x365.jpg</a></div>
         </div>
         <div class="panel-body inner">
           <header>
@@ -72,7 +72,9 @@
               <li><input type="text" name="" id="" placeholder="Title" class="full"></li>
               <li></li>
               <li><textarea name="editor" id="editor" cols="30" rows="10" class="full">Sample text goes here ...</textarea></li>
-              <li><input type="file" name="" id=""></li>
+              <li>
+                <?php include 'part/upload-base.php'; ?>
+              </li>
               <li><button class="button button-alert">Create</button></li>
             </ul>
           </form>
