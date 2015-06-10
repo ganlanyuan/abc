@@ -20,7 +20,7 @@
       <div class="panel-head">
         <span class="abc-speaker icons-lg"></span>
         <h3 class="heading3">Announcements</h3>
-        <a href="" class="button button-alert">View all</a>
+        <a href="" class="button button-danger">View all</a>
       </div>
       <div class="panel-body panel-bottom">
         <ul class="wider styled">
@@ -86,7 +86,7 @@
             </select>
             <span class="abc-caret-down"></span>
           </span>
-          <input type="submit" value="Submit" class="button button-alert">
+          <input type="submit" value="Submit" class="button button-danger">
         </form>
       </div>
     </div>

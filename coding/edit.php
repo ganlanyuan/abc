@@ -19,7 +19,7 @@
               <li><input type="text" name="" id="" placeholder="Title" class="full"></li>
               <li></li>
               <li><textarea name="editor" id="editor" cols="30" rows="10" class="full">Sample text goes here ...</textarea></li>
-              <li><button class="button button-normal">Back</button> <button class="button button-alert">Save change</button></li>
+              <li><button class="button button-normal">Back</button> <button class="button button-danger">Save change</button></li>
               <li>
                 <?php include 'part/upload-standard.php'; ?>
               </li>

@@ -20,7 +20,7 @@
         <p>I look forward to a thrilling discussion!</p>
       </div>
       <div class="action-line">
-        <button class="button button-alert">new thread</button>
+        <button class="button button-danger">new thread</button>
         <button class="button button-normal">1</button>
         <button class="button button-normal current">2</button>
         <button class="button button-normal">3</button>

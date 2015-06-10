@@ -11,7 +11,7 @@
         <input type="email" name="" id="" placeholder="xyz@gmail.com" class="button button-line">
         <input type="password" name="" id="" placeholder="password" class="button button-line">
       </div>
-      <input type="submit" value="login" class="button button-alert">
+      <input type="submit" value="login" class="button button-danger">
     </form>
   </div>
 </div>

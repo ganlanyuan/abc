@@ -11,10 +11,10 @@
       <form action="" class="search-students">
         <h4 class="heading4">Search Student</h4>
         <input type="search" name="" id="" placeholder="Search Student Name or ID" class="button button-search">
-        <input type="submit" value="go!" class="button button-alert">
+        <input type="submit" value="go!" class="button button-danger">
       </form>
       <div class="actions">
-        <div class="button button-alert"><span class="abc-list-nested"></span>list all students</div>
+        <div class="button button-danger"><span class="abc-list-nested"></span>list all students</div>
         <div class="button button-secondary"><span class="abc-user-add"></span>create student</div>
       </div>
     </div>
@@ -93,7 +93,7 @@
       </table>
     </div>
     <div class="panel-foot clearfix">
-      <div class="button button-alert" data-aside>total number of students: <span>24</span></div>
+      <div class="button button-danger" data-aside>total number of students: <span>24</span></div>
       <?php include 'part/pagination.php'; ?>
     </div>
   </div>

@@ -16,7 +16,7 @@
         <div class="panel-body inner">
           <div class="icons">
             <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-            <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
+            <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
             <span class="abc-arrow-down"></span>
             <span class="abc-arrow-up"></span>
           </div>
@@ -30,7 +30,7 @@
           <header>
             <div class="icons">
               <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-              <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
+              <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
@@ -47,7 +47,7 @@
           <header>
             <div class="icons">
               <button class="button button-success"><span class="abc-pencil"></span>Edit</button>
-              <button class="button button-alert"><span class="abc-delete"></span>Delete</button>
+              <button class="button button-danger"><span class="abc-delete"></span>Delete</button>
               <span class="abc-arrow-down"></span>
               <span class="abc-arrow-up"></span>
             </div>
@@ -75,7 +75,7 @@
               <li>
                 <?php include 'part/upload-base.php'; ?>
               </li>
-              <li><button class="button button-alert">Create</button></li>
+              <li><button class="button button-danger">Create</button></li>
             </ul>
           </form>
         </div>

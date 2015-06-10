@@ -18,7 +18,7 @@
           <li></li>
           <li><textarea name="editor" id="editor" cols="30" rows="10" class="full">Sample text goes here ...</textarea></li>
           <li><?php include 'part/upload-base.php'; ?></li>
-          <li><button class="button button-alert">Create</button></li>
+          <li><button class="button button-danger">Create</button></li>
         </ul>
       </form>
     </div>
@@ -36,25 +36,25 @@
         <tbody>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 3</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 2</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> new announcement 1</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td><span class="abc-speaker icons-fill icons-sm"></span> Welcome</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="panel-foot clearfix">
-      <div class="button button-alert" data-aside>Total Number of Courses: <span>4</span></div>
+      <div class="button button-danger" data-aside>Total Number of Courses: <span>4</span></div>
       <?php include 'part/pagination.php'; ?>
     </div>
   </div>

@@ -19,7 +19,7 @@
             </select>
             <span class="abc-caret-down"></span>
           </span>
-          <input type="submit" value="Go!" class="button button-alert">
+          <input type="submit" value="Go!" class="button button-danger">
         </form>
       </form>
       <div class="actions">
@@ -37,25 +37,25 @@
         <tbody>
           <tr>
             <td>New Testment 101 - Sample Class</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td>Old Testament 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td>Missions 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
           <tr>
             <td>Release 101</td>
-            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-alert"><span class="abc-delete"></span>Delete</span></td>
+            <td><span class="button button-normal"><span class="abc-pencil"></span>Edit</span> <span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="panel-foot clearfix">
-      <div class="button button-alert" data-aside>Total Number of Courses: <span>4</span></div>
+      <div class="button button-danger" data-aside>Total Number of Courses: <span>4</span></div>
       <?php include 'part/pagination.php'; ?>
     </div>
   </div>

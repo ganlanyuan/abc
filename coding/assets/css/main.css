@@ -4,16 +4,16 @@
   display: table;
 }
 
-.alert-success:hover, .alert-info:hover, .alert-warning:hover, .alert-danger:hover, .button:hover, .button-normal:hover, .button-secondary:hover, .button-success:hover, .button-alert:hover, .select-wrap:hover, .pagination a:hover {
+.alert-success:hover, .alert-info:hover, .alert-warning:hover, .alert-danger:hover, .button:hover, .button-normal:hover, .button-secondary:hover, .button-info:hover, .button-success:hover, .button-warning:hover, .button-danger:hover, .select-wrap:hover, .pagination a:hover {
   text-decoration: none;
 }
 
-.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-success, .button-alert, .select-wrap, .pagination a, .icons-rect, .icons > [class^='abc-'], .container, .head .branding > a, .head .icons-circle, .user-panel a, .main-nav li, .sub-nav li, .banner-content h2, .banner-content h3 {
+.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-info, .button-success, .button-warning, .button-danger, .select-wrap, .pagination a, .icons-rect, .icons > [class^='abc-'], .container, .head .branding > a, .head .icons-circle, .user-panel a, .main-nav li, .sub-nav li, .banner-content h2, .banner-content h3 {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-success, .button-alert, .select-wrap, .pagination a {
+.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-info, .button-success, .button-warning, .button-danger, .select-wrap, .pagination a {
   display: inline-block;
   box-sizing: border-box;
 }
@@ -49,7 +49,7 @@
   display: table;
 }
 
-.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-success, .button-alert, .select-wrap, .pagination a, .icons-rect, .icons > [class^='abc-'], .container, .head .branding > a, .head .icons-circle, .user-panel a, .main-nav li, .sub-nav li, .banner-content h2, .banner-content h3 {
+.alert-success, .alert-info, .alert-warning, .alert-danger, .button, .button-normal, .button-secondary, .button-info, .button-success, .button-warning, .button-danger, .select-wrap, .pagination a, .icons-rect, .icons > [class^='abc-'], .container, .head .branding > a, .head .icons-circle, .user-panel a, .main-nav li, .sub-nav li, .banner-content h2, .banner-content h3 {
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
@@ -1002,6 +1002,14 @@ p:last-child {
   background-color: #3e4d75;
   color: #fff;
 }
+.button-info {
+  background-color: #0ab6ef;
+  color: #fff;
+}
+.button-info:hover {
+  background-color: #35c6f7;
+  color: #000;
+}
 .button-success {
   background-color: #9bbd48;
   color: #000;
@@ -1011,11 +1019,20 @@ p:last-child {
   background-color: #7e9a38;
   color: #fff;
 }
-.button-alert {
+.button-warning {
+  background-color: #ec971f;
+  color: #000;
+  color: #fff;
+}
+.button-warning:hover {
+  background-color: #c77c11;
+  color: #fff;
+}
+.button-danger {
   background-color: #c04545;
   color: #fff;
 }
-.button-alert:hover {
+.button-danger:hover {
   background-color: #9d3535;
   color: #fff;
 }
@@ -1103,7 +1120,8 @@ form li:last-child {
 .select-wrap select {
   border-width: 0;
   background-color: #f2f2f2;
-  width: 120%;
+  width: 150%;
+  width: calc(100% + 2em);
 }
 
 .line {
