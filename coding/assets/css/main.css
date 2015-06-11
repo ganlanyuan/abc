@@ -1070,14 +1070,15 @@ input, textarea {
   font-size: 14px;
   border: 1px solid #e4e4e4;
   border-radius: 3px;
-}
-
-input {
   background-color: #f7f8fa;
 }
 
 textarea {
   line-height: 1.33;
+}
+
+label {
+  font-size: 14px;
 }
 
 form li {
@@ -1103,7 +1104,7 @@ form li:last-child {
   color: #000;
   position: relative;
   display: inline-block;
-  padding: 0.4em 0.6em;
+  padding: 0.4em 1.8em 0.4em 0.6em;
   border: 1px solid #e4e4e4;
   overflow: hidden;
   font-size: 14px;
@@ -1121,7 +1122,7 @@ form li:last-child {
   border-width: 0;
   background-color: #f2f2f2;
   width: 150%;
-  width: calc(100% + 2em);
+  width: calc(100% + 3.2em);
 }
 
 .line {
@@ -1140,6 +1141,48 @@ form li:last-child {
 @media (min-width: 23.75em) {
   .line .button {
     float: right;
+  }
+}
+
+.help-inline {
+  font-size: 12px;
+  color: #c04545;
+}
+
+.form-aligned .required label:after, .form-aligned .required label:before {
+  font-size: 12px;
+  vertical-align: top;
+  color: #c04545;
+}
+
+.form-aligned {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 43.6875em) {
+  .form-aligned .control-label {
+    display: block;
+    margin-bottom: 0.3571428571em;
+  }
+  .form-aligned .required label:after {
+    content: " *";
+  }
+}
+@media (min-width: 43.75em) {
+  .form-aligned .control-label {
+    width: 10em;
+    padding-right: 0.7em;
+    line-height: 38px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+  }
+  .form-aligned .control-field {
+    display: inline-block;
+  }
+  .form-aligned .required label:before {
+    content: "* ";
   }
 }
 
@@ -1799,6 +1842,24 @@ body {
     margin-bottom: 0.7142857143em;
   }
 }
+.inline-group {
+  text-align: center;
+}
+.inline-cell {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.inline-cell:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.inline-cell .button {
+  margin-right: 1px;
+  margin-bottom: 5px;
+}
+
 @media (min-width: 62.5em) {
   .nav-left .sub-nav {
     float: left;

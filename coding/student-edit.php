@@ -7,10 +7,10 @@
 
 <div class="container">
   <div class="panel">
-    <div class="panel-head clearfix">
-      <h4 class="heading4"><span class="small">StudentID:</span> 1004</h4>
-      <h4 class="heading4"><span class="small">Student Name:</span> Henry Bergen</h4>
-      <div class="">
+    <div class="panel-head inline-group clearfix">
+      <h4 class="heading4 inline-cell"><span class="small">StudentID:</span> 1004</h4>
+      <h4 class="heading4 inline-cell"><span class="small">Student Name:</span> Henry Bergen</h4>
+      <div class="inline-cell">
         <a href="" class="button button-info">View Printable Page</a>
         <a href="" class="button button-info">Degree Progress Report</a>
         <a href="" class="button button-warning">Reset Password</a>
@@ -19,7 +19,15 @@
     </div>
     <div class="panel-pure">
       <form action="">
-        <ol>
+        <ol class="form-aligned">
+          <li>
+            <label for="" class="control-label">&nbsp;</label>
+            <div class="control-field">
+              <img src="assets/img/avatar.png" alt="" width="140" height="140"><br />
+              <!-- Avatar <br /> -->
+              <?php include 'part/upload-base.php'; ?>
+            </div>
+          </li>
           <li>
             <label for="" class="control-label">First Name</label>
             <div class="control-field"><input type="text"></div>
@@ -28,9 +36,12 @@
             <label for="" class="control-label">Middle Name</label>
             <div class="control-field"><input type="text"></div>
           </li>
-          <li>
+          <li class="required">
             <label for="" class="control-label">Last Name</label>
-            <div class="control-field"><input type="text"></div>
+            <div class="control-field">
+              <input type="text" data-notempty-message="The Last Name is Required">
+              <small class="help-inline">The Last Name is Required</small>
+            </div>
           </li>
           <li>
             <label for="" class="control-label">Login E-mail</label>
@@ -149,7 +160,7 @@
           </li>
           <li>
             <label for="" class="control-label">Additional Data</label>
-            <div class="control-field"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+            <div class="control-field"><textarea name="" id="" cols="50" rows="7"></textarea></div>
           </li>
           <li>
             <label for="" class="control-label">&nbsp;</label>
