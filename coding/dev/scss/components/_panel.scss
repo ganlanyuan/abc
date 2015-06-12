@@ -4,6 +4,17 @@
 .panel {
   position: relative;
   margin-bottom: $global-gutter;
+  &-pure {
+    margin-bottom: $global-gutter;
+    padding: map-get($panel-padding, 'head');
+    background-color: #fff;
+    border: 1px solid $border-color;
+  }
+  &-paster {
+    max-width: 43em;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &-head,
   &-foot {
     padding: map-get($panel-padding, 'head');
@@ -25,12 +36,6 @@
   }
   &-foot {
     border-top-width: 0;
-  }
-  &-pure {
-    margin-bottom: $global-gutter;
-    padding: map-get($panel-padding, 'head');
-    background-color: #fff;
-    border: 1px solid $border-color;
   }
   &-body {
     border: 1px solid $border-color;

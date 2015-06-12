@@ -807,6 +807,17 @@ p:last-child {
   position: relative;
   margin-bottom: 3.45%;
 }
+.panel-pure {
+  margin-bottom: 3.45%;
+  padding: 0.9375em 1.25em;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+}
+.panel-paster {
+  max-width: 43em;
+  margin-left: auto;
+  margin-right: auto;
+}
 .panel-head, .panel-foot {
   padding: 0.9375em 1.25em;
   background-color: #fff;
@@ -833,12 +844,6 @@ p:last-child {
 }
 .panel-foot {
   border-top-width: 0;
-}
-.panel-pure {
-  margin-bottom: 3.45%;
-  padding: 0.9375em 1.25em;
-  background-color: #fff;
-  border: 1px solid #e4e4e4;
 }
 .panel-body {
   border: 1px solid #e4e4e4;
@@ -1081,11 +1086,22 @@ label {
   font-size: 14px;
 }
 
+[type="checkbox"],
+[type="radio"] {
+  margin-right: 0.4em;
+}
+
 form li {
   margin-bottom: 1.25em;
 }
 form li:last-child {
   margin-bottom: 0;
+}
+
+.form-head {
+  padding-bottom: 0.625em;
+  margin-bottom: 1.875em;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .full {
@@ -1157,13 +1173,15 @@ form li:last-child {
 
 .form-aligned {
   max-width: 43.75em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.625em auto;
 }
 @media (max-width: 43.6875em) {
   .form-aligned .control-label {
     display: block;
     margin-bottom: 0.3571428571em;
+  }
+  .form-aligned .label-empty {
+    display: none;
   }
   .form-aligned .required label:after {
     content: " *";
@@ -1171,7 +1189,7 @@ form li:last-child {
 }
 @media (min-width: 43.75em) {
   .form-aligned .control-label {
-    width: 10em;
+    width: 12em;
     padding-right: 0.7em;
     line-height: 38px;
     display: inline-block;
@@ -1184,6 +1202,14 @@ form li:last-child {
   .form-aligned .required label:before {
     content: "* ";
   }
+}
+
+.checkbox-list li {
+  width: 12em;
+  display: inline-block;
+}
+.checkbox-list li:last-child {
+  display: block;
 }
 
 table {

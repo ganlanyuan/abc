@@ -163,7 +163,7 @@
             <div class="control-field"><textarea name="" id="" cols="50" rows="7"></textarea></div>
           </li>
           <li>
-            <label for="" class="control-label">&nbsp;</label>
+            <label for="" class="control-label label-empty">&nbsp;</label>
             <div class="control-field"><a href="" class="button button-secondary">Save change</a></div>
           </li>
         </ol>
