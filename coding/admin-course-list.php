@@ -10,17 +10,15 @@
     <div class="panel-head clearfix">
       <form action="" class="search-students">
         <h4 class="heading4">Courses</h4>
-        <form action="">
-          <span class="select-wrap">
-            <select name="" id="">
-              <option value="Winter 2015">Winter 2015</option>
-              <option value="Spring 2016">Spring 2016</option>
-              <option value="Summer 2016">Summer 2016</option>
-            </select>
-            <span class="abc-caret-down"></span>
-          </span>
-          <input type="submit" value="Go!" class="button button-danger">
-        </form>
+        <span class="select-wrap">
+          <select name="" id="">
+            <option value="Winter 2015">Winter 2015</option>
+            <option value="Spring 2016">Spring 2016</option>
+            <option value="Summer 2016">Summer 2016</option>
+          </select>
+          <span class="abc-caret-down"></span>
+        </span>
+        <input type="submit" value="Go!" class="button button-danger">
       </form>
       <div class="actions">
         <div class="button button-secondary"><span class="abc-page-add"></span>Create New Course</div>
