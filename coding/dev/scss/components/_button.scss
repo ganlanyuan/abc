@@ -14,6 +14,10 @@
   &-success { @include button(map-get($button, 'success') 'hover'); color: #fff; }
   &-warning { @include button(map-get($button, 'warning') 'hover'); color: #fff; }
   &-danger { @include button(map-get($button, 'danger') 'hover'); }
+  &-toggle {
+    @include button('0 10px' #f2f2f2 hover radius);
+    cursor: pointer;
+  }
   &-line {
     font-weight: normal;
     color: #fff;
@@ -41,4 +45,5 @@
     line-height: 13px;
     vertical-align: middle;
   }
+  .alone { margin-right: 0; }
 }

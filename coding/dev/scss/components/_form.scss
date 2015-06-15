@@ -103,6 +103,7 @@ form li {
       }
     }
     @include breakpoint('min' 700) {
+      .full { min-width: 27em; }
       .control {
         &-label {
           width: 12em;

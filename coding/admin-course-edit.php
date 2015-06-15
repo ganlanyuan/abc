@@ -15,38 +15,59 @@
         <ol class="form-aligned">
           <li>
             <label for="" class="control-label">Course Title</label>
-            <div class="control-field"><input type="text"></div>
+            <div class="control-field"><input class="full" type="text" value="New Testment"></div>
           </li>
-          <li class="required">
-            <label for="" class="control-label">Last Name</label>
+          <li>
+            <label for="" class="control-label">Term</label>
             <div class="control-field">
-              <input type="text" data-notempty-message="The Last Name is Required">
-              <small class="help-inline">The Last Name is Required</small>
-            </div>
-          </li>
-          <li>
-            <label for="" class="control-label">Student Id</label>
-            <div class="control-field"><input type="number"></div>
-          </li>
-          <li>
-            <label for="" class="control-label">Login E-mail</label>
-            <div class="control-field"><input type="email"></div>
-          </li>
-          <li>
-            <label for="" class="control-label">Temporary Password</label>
-            <div class="control-field"><input type="password" required=""></div>
-          </li>
-          <li>
-            <label for="" class="control-label">Status</label>
-            <div class="control-field">
-              <span class="select-wrap">
-                <select id="status" name="status" data-bv-notempty-message="The status is required">
-                  <option value="">-- Select a Status --</option>
-                  <option value="1" selected="">Active</option><option value="2">Inactive</option><option value="3">Graduated</option>
+              <span class="select-wrap full">
+                <select id="termId" name="termId">
+                  <option value="">-- Select a Term --</option>
+                  <option value="6" selected="">Fall 2014</option>
                 </select>
                 <span class="abc-caret-down"></span>
               </span>
             </div>
+          </li>
+          <li>
+            <label for="" class="control-label">Program</label>
+            <div class="control-field">
+              <span class="select-wrap full">
+                <select id="programId" name="programId">
+                  <option value="">-- Select a Program --</option>
+                  <option value="3" selected="">Bachelor of Arts (B.A.)</option><option value="4">Masters of Arts (M.A.)</option><option value="5">Master of Divinity (M.Div.)</option><option value="6">Doctor of Ministry (D.Min.)</option>
+                </select>
+                <span class="abc-caret-down"></span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <label for="" class="control-label">Major</label>
+            <div class="control-field">
+              <span class="select-wrap full">
+                <select id="majorId" name="majorId">
+                  <option value="">-- Select a Major --</option>
+                  <option value="5" selected="">Theology</option><option value="6">Music</option><option value="7">Business</option>
+                </select>
+                <span class="abc-caret-down"></span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <label for="" class="control-label">Location</label>
+            <div class="control-field">
+              <span class="select-wrap full">
+                <select id="locationId" name="locationId">
+                  <option value="">-- Select a Location --</option>
+                  <option value="4" selected="">USA</option><option value="5">Europe</option>
+                </select>
+                <span class="abc-caret-down"></span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <label for="" class="control-label">Units</label>
+            <div class="control-field"><input class="full" type="number" value="3"></div>
           </li>
           <li>
             <label for="" class="control-label label-empty">&nbsp;</label>
@@ -58,37 +79,25 @@
   </div>
   <div class="panel panel-table">
     <div class="panel-head clearfix">
-      <h3 class="heading3">Add Instructors</h3>
+      <h3 class="heading3 title">Add Instructors</h3>
       <form action="" class="search-students">
         <input type="search" name="" id="" placeholder="Search Instructor Name or ID" class="button button-search">
         <input type="submit" value="add" class="button button-danger">
       </form>
-      <div class="actions">
-        <div class="button button-secondary">hide</div>
+      <div class="actions button-toggle">
+        <span class="abc-angle-up alone icons-lg"></span>
       </div>
     </div>
-    <div class="panel-body">
-      <table class="table-striped table-responsive table-student">
-        <tbody>
-          <tr>
-            <td>New Testment 101 - Sample Class</td>
-            <td><span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
-          </tr>
-          <tr>
-            <td>Old Testament 101</td>
-            <td><span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
-          </tr>
-          <tr>
-            <td>Missions 101</td>
-            <td><span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
-          </tr>
-          <tr>
-            <td>Release 101</td>
-            <td><span class="button button-danger"><span class="abc-delete"></span>Delete</span></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="panel-body inner">
+      <div class="line clearfix">New Testment 101 - Sample Class <span class="button button-danger"><span class="abc-delete"></span>Delete</span></div>
+      <div class="line clearfix">Old Testament 101 <span class="button button-danger"><span class="abc-delete"></span>Delete</span></div>
+      <div class="line clearfix">Missions 101 <span class="button button-danger"><span class="abc-delete"></span>Delete</span></div>
+      <div class="line clearfix">Release 101 <span class="button button-danger"><span class="abc-delete"></span>Delete</span></div>
     </div>
+  </div>
+  <div class="panel-pure">
+    <span class="button button-normal">Close</span>
+    <span class="button button-info">Save Change</span>
   </div>
 </div>
 <?php include 'part/footer.php'; ?>
