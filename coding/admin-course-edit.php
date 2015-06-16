@@ -91,22 +91,22 @@
     <div class="panel-body inner">
       <div class="line clearfix">New Testment 101 - Sample Class 
         <div class="line-actions">
-          <span class="button button-danger"><span class="abc-delete"></span>Delete</span>
+          <?php include 'part/button/delete.php'; ?>
         </div>
       </div>
       <div class="line clearfix">Old Testament 101 
         <div class="line-actions">
-          <span class="button button-danger"><span class="abc-delete"></span>Delete</span>
+          <?php include 'part/button/delete.php'; ?>
         </div>
       </div>
       <div class="line clearfix">Missions 101 
         <div class="line-actions">
-          <span class="button button-danger"><span class="abc-delete"></span>Delete</span>
+          <?php include 'part/button/delete.php'; ?>
         </div>
       </div>
       <div class="line clearfix">Release 101 
         <div class="line-actions">
-          <span class="button button-danger"><span class="abc-delete"></span>Delete</span>
+          <?php include 'part/button/delete.php'; ?>
         </div>
       </div>
     </div>

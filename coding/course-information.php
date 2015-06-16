@@ -8,7 +8,6 @@
   <div class="content nav-left clearfix">
     <?php include 'part/sub-nav.php'; ?>
     <div class="main">
-      <?php include 'part/breadcrumb.php'; ?>
       <div class="panel panel-table">
         <div class="panel-head">
           <div class="summary float-button clearfix">

@@ -141,8 +141,11 @@ form li {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  > .input:last-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  > .input {
+    background-color: #F0F0F0;
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 }

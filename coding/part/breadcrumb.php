@@ -7,9 +7,16 @@
         echo "Submissions";
       } else if ($pagename == 'quiz-grades') {
         echo "Quizzes";
+      } else if ($pagename == 'quiz-response') {
+        echo "Quizzes";
       }
     ?>
   </a>
+  <?php
+    if ($pagename == 'quiz-response') {
+      echo "<a href=''>1, 2, 3 John Quiz</a>";
+    }
+  ?>
   <span>
     <?php 
       if ($pagename == 'class-folder-files') {
@@ -18,6 +25,8 @@
         echo "Homework Week 1: 1, 2, 3 John";
       } else if ($pagename == 'quiz-grades') {
         echo "Grades: 1, 2, 3 John Quiz";
+      } else if ($pagename == 'quiz-response') {
+        echo "Responses:John Smith";
       }
     ?>
   </span>

@@ -7,4 +7,9 @@ ready(function () {
     k(this).parents('.panel').toggleClass('panel-close');
     k(this).find('span').toggleClass('abc-angle-up').toggleClass('abc-angle-down');
   });
+
+  // video list
+  k('.video-list .toggle').click(function() {
+    k(this).parents('li').toggleClass('show');
+  });
 })

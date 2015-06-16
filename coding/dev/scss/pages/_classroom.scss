@@ -37,3 +37,52 @@
     }
   }
 }
+.file-list {
+  @include button('15px 20px' radius);
+  display: block;
+  border: 1px solid #428bca;
+}
+.video {
+  &-list {
+    .toggle { cursor: pointer; }
+  }
+  &-wrapper {
+    margin: em(20) auto em(50);
+    width: 90%;
+    display: none;
+    a { text-align: center; }
+    .show & { display: block; }
+  }
+}
+.flex-video { @include flex-video((9/16)); }
+.quiz-response-list {
+  li {
+    margin: em(20) 0;
+    padding-top: em(20);
+    border-top: 1px solid $border-color;
+  }
+  p {
+    font-weight: bold;
+    color: $brand-color;
+  }
+  label {
+    display: block;
+    margin: em(10) 0;
+  }
+  .abc-check {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .tips {
+    @include button(14px '8px 12px' radius);
+    display: block;
+    margin: 5px 0;
+    color: #fff;
+    @each $tip in 'success', 'danger' {
+      &-#{$tip} {
+        background-color: lighten(map-get($button, $tip), 10%);
+      }
+    }
+  }
+  .input-group { margin-bottom: 6px; }
+}
