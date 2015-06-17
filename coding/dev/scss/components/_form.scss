@@ -136,16 +136,16 @@ form li {
   @extend %clearfix;
   > input,
   > .input { float: left; }
-  > input:first-child {
+  > :first-child {
     border-right-width: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+  > :last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
   > .input {
     background-color: #F0F0F0;
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
   }
 }

@@ -86,3 +86,15 @@
   }
   .input-group { margin-bottom: 6px; }
 }
+.quiz-question {
+  &-list {
+    .float-button { margin-bottom: 20px; }
+  }
+  &-add {
+    .heading4 { margin-bottom: 10px; }
+    .input-group > input { 
+      width: calc(100% - 40px); 
+      box-sizing: border-box;
+    }
+  }
+}
