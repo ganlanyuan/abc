@@ -26,3 +26,87 @@
   .button { margin-bottom: 5px; }
   .current { background-color: map-get($button, 'danger'); }
 }
+.discussion-post {
+  &-head {
+    > .button { margin-bottom: 7px; }
+    @include breakpoint('min' 640) {
+      > .pagination { float: right; }
+    }
+  }
+}
+.post {
+  padding: 15px 20px;
+  border: 1px solid $border-color;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  &-list {
+    margin: em(10) 0;
+    border-top: 1px solid $border-color;
+    > li {
+      margin: em(20) 0;
+      > time {
+        @include button(13px '10px 20px' #f2f2f2);
+        display: block;
+        border: 1px solid $border-color;
+        border-bottom-width: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+    }
+  }
+  &-person {
+    margin-bottom: em(10);
+    > .name {
+      @include type(15px bold 1.3);
+      > a { color: #2382EF; }
+    }
+    > .position {
+      @include type(13px);
+      color: #888;
+    }
+  }
+  &-content {
+    footer {
+      border-top: 1px solid $border-color;
+    }
+    @include breakpoint('max' 767) {
+      border-top: 1px solid $border-color;
+      padding-top: 6px;
+    }
+  }
+  &-title {
+    @include type(22px);
+    color: $brand-color;
+    margin-bottom: 10px;
+  }
+  &-time {
+    color: #888;
+  }
+  .words-count {
+    font-size: 13px;
+    margin-right: 5px;
+    display: block;
+    color: #888;
+    @include breakpoint('max' 767) {
+      margin: 5px 0;
+    }
+  }
+  @include breakpoint('min' 768) {
+    &-person { 
+      @include media('media' 20px); 
+      > .name { width: 120px; }
+    }
+    &-content {
+      @include media('media-body');
+      border-left: 1px solid $border-color;
+      padding-left: 16px;
+    }
+    &-foot-buttons {
+      float: right;
+      margin-top: 7px;
+    }
+    .words-count {
+      display: inline-block;
+    }
+  }
+}
