@@ -8,12 +8,20 @@
   white-space: nowrap;
   border-width: 0;
   cursor: pointer;
-  &-normal { @include button(map-get($button, 'normal') 'hover'); }
-  &-secondary { @include button(map-get($button, 'secondary') 'hover'); }
-  &-info { @include button(map-get($button, 'info') 'hover'); }
-  &-success { @include button(map-get($button, 'success') 'hover'); color: #fff; }
-  &-warning { @include button(map-get($button, 'warning') 'hover'); color: #fff; }
-  &-danger { @include button(map-get($button, 'danger') 'hover'); }
+  &[disabled] { 
+    @include opacity(0.5); 
+    cursor: not-allowed;
+  }
+  @each $item in 'normal', 'secondary', 'info', 'success', 'warning', 'danger' {
+    &-#{$item} { 
+      @include button(map-get($button, $item) 'hover'); 
+      &[disabled]:hover {
+        background-color: map-get($button, $item);
+      }
+    }
+  }
+  &-success, 
+  &-warning { color: #fff; }
   &-toggle {
     @include button('0 10px' #f2f2f2 hover radius);
     cursor: pointer;

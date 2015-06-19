@@ -12,4 +12,12 @@ ready(function () {
   k('.video-list .toggle').click(function() {
     k(this).parents('li').toggleClass('show');
   });
-})
+
+  // button popup
+  k('.button-popup > .button').click(function() {
+    k(this).siblings('.popup-content').toggleClass('show');
+  });
+  k('.button-popup .cancel').click(function() {
+    k(this).parents('.popup-content').removeClass('show');
+  });
+});

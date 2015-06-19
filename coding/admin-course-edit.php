@@ -70,7 +70,7 @@
             <div class="control-field"><input class="full" type="number" value="3"></div>
           </li>
           <li>
-            <label for="" class="control-label label-empty">&nbsp;</label>
+            <span class="control-label">&nbsp;</span>
             <div class="control-field"><a href="" class="button button-secondary">Submit</a></div>
           </li>
         </ol>

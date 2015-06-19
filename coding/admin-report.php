@@ -10,7 +10,7 @@
     <form action="">
       <ol class="form-aligned">
         <li class="form-head">
-          <label for="" class="control-label label-empty"></label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field">
             <h3 class="heading3">Student List <br /><small class="small">(Filter By)</small></h3>
           </div>
@@ -63,7 +63,7 @@
           </div>
         </li>
         <li>
-          <label for="" class="control-label label-empty">&nbsp;</label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field"><a href="" class="button button-info">View / Print Report</a></div>
         </li>
       </ol>
@@ -73,7 +73,7 @@
     <form action="">
       <ol class="form-aligned">
         <li class="form-head">
-          <label for="" class="control-label label-empty"></label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field">
             <h3 class="heading3">Instructor List <br /><small class="small">(Filter By)</small></h3>
           </div>
@@ -102,7 +102,7 @@
           </div>
         </li>
         <li>
-          <label for="" class="control-label label-empty">&nbsp;</label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field"><a href="" class="button button-info">View / Print Report</a></div>
         </li>
       </ol>
@@ -112,7 +112,7 @@
     <form action="">
       <ol class="form-aligned">
         <li class="form-head">
-          <label for="" class="control-label label-empty"></label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field">
             <h3 class="heading3">Course List <br /><small class="small">(Filter By)</small></h3>
           </div>
@@ -183,7 +183,7 @@
           </div>
         </li>
         <li>
-          <label for="" class="control-label label-empty">&nbsp;</label>
+          <span class="control-label">&nbsp;</span>
           <div class="control-field"><a href="" class="button button-info">View / Print Report</a></div>
         </li>
       </ol>

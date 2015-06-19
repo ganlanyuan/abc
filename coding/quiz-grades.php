@@ -14,7 +14,7 @@
           <h3 class="heading3">Quizzes</h3>
         </div>
         <div class="panel-body">
-          <table class="table-striped table-responsive table-quiz-grades">
+          <table class="table table-striped table-responsive table-quiz-grades">
             <thead>
               <th>Name</th>
               <th>Score</th>

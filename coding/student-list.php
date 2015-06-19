@@ -25,7 +25,7 @@
           <label for=""><input data-remote="/instructor/course/26/editHideEmail?r=Math.random()" checked="" type="checkbox">Phone Number</label>
         </div>
         <div class="panel-body">
-          <table class="table-striped table-responsive table-student-list">
+          <table class="table table-striped table-responsive table-student-list">
             <thead>
               <tr>
                 <th>

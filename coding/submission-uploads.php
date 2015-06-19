@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="panel-body">
-          <table class="table-striped table-responsive table-submission-uploads">
+          <table class="table table-striped table-responsive table-submission-uploads">
             <thead>
               <tr>
                 <th>

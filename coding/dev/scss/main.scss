@@ -4,6 +4,7 @@
 @import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss"; 
 @import "../../bower_components/rocket/src/scss/_rocket.scss";
 @import "vendors/browsehappy";
+@import "vendors/pikaday";
 // @import "vendors/owl-carousel2";
 
 // helpers
@@ -26,6 +27,7 @@
 @import "components/pagination";
 @import "components/breadcrumb";
 @import "components/dropdown";
+@import "components/button-popup";
 
 // layout
 @import "layout/header";
@@ -40,5 +42,6 @@
 @import "pages/discussion";
 @import "pages/login";
 @import "pages/contact";
+@import "pages/grade";
 
 @import "base/print";

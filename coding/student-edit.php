@@ -21,7 +21,7 @@
       <form action="">
         <ol class="form-aligned">
           <li>
-            <label for="" class="control-label">&nbsp;</label>
+            <span class="control-label">&nbsp;</span>
             <div class="control-field">
               <img src="assets/img/avatar.png" alt="" width="140" height="140"><br />
               <!-- Avatar <br /> -->
@@ -163,7 +163,7 @@
             <div class="control-field"><textarea name="" id="" cols="50" rows="7"></textarea></div>
           </li>
           <li>
-            <label for="" class="control-label label-empty">&nbsp;</label>
+            <span class="control-label">&nbsp;</span>
             <div class="control-field"><a href="" class="button button-secondary">Save change</a></div>
           </li>
         </ol>

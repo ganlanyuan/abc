@@ -31,7 +31,7 @@
           <h3 class="heading3">week 1: globalization: thread list</h3>
         </div>
         <div class="panel-body">
-          <table class="table-striped table-responsive table-thread">
+          <table class="table table-striped table-responsive table-thread">
             <thead>
               <th>Thread / thread Starter</th>
               <th>latest post</th>

@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="panel-body">
-      <table class="table-striped table-responsive table-student">
+      <table class="table table-striped table-responsive table-student">
         <thead>
           <tr>
             <th>Course Title</th>

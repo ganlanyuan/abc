@@ -113,7 +113,7 @@
                 <div class="control-field"><input type="text" name="" class="full" id="video-code" placeholder="Title"></div>
               </li>
               <li>
-                <label for="" class="control-label">&nbsp;</label>
+                <span class="control-label">&nbsp;</span>
                 <div class="control-field"><span class="button button-danger">Create</span></div>
               </li>
             </ol>

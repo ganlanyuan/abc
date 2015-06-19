@@ -13,7 +13,7 @@
           <h3 class="heading3">DISCUSSION: <span class="small">New Testment 101 - Sample Class</span></h3>
         </div>
         <div class="panel-body">
-          <table class="table-striped table-responsive table-discussion">
+          <table class="table table-striped table-responsive table-discussion">
             <thead>
               <tr>
                 <th>Topics</th>
