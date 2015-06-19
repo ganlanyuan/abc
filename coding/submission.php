@@ -10,8 +10,10 @@
     <div class="main">
       <div class="panel panel-table">
         <div class="panel-head">
-          <div class="float-button clearfix">
-            <?php include 'part/button/edit.php'; ?>
+          <div class="clearfix">
+            <div class="right">
+              <?php include 'part/button/edit.php'; ?>
+            </div>
             <h3 class="heading3">SUBMISSIONS: <span class="small">New Testment 101 - Sample Class</span></h3>
           </div>
         </div>

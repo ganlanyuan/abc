@@ -24,32 +24,40 @@
         <h4>Questions <span class="abc-caret-down"></span></h4>
         <ol class="quiz-response-list quiz-question-list">
           <li>
-            <div class="float-button clearfix">
-              <?php include 'part/button/delete.php'; ?>
+            <div class="question clearfix">
+              <div class="right">
+                <?php include 'part/button/delete.php'; ?>
+              </div>
               <p>Duvall and Hays suggest adding an outline of the passage as part of preparing a research paper.</p>
             </div>
             <div class="tips tips-success"><span class="abc-check"> </span>True</div>
             <div class="tips tips-danger"><span class="abc-close"> </span>False</div>
           </li>
           <li>
-            <div class="float-button clearfix">
-              <?php include 'part/button/delete.php'; ?>
+            <div class="question clearfix">
+              <div class="right">
+                <?php include 'part/button/delete.php'; ?>
+              </div>
               <p>Duvall and Hays suggest adding an outline of the passage as part of preparing a research paper.</p>
             </div>
             <div class="tips tips-success"><span class="abc-check"> </span>True</div>
             <div class="tips tips-danger"><span class="abc-close"> </span>False</div>
           </li>
           <li>
-            <div class="float-button clearfix">
-              <?php include 'part/button/delete.php'; ?>
+            <div class="question clearfix">
+              <div class="right">
+                <?php include 'part/button/delete.php'; ?>
+              </div>
               <p>Duvall and Hays suggest adding an outline of the passage as part of preparing a research paper.</p>
             </div>
             <div class="tips tips-success"><span class="abc-check"> </span>True</div>
             <div class="tips tips-danger"><span class="abc-close"> </span>False</div>
           </li>
           <li>
-            <div class="float-button clearfix">
-              <?php include 'part/button/delete.php'; ?>
+            <div class="question clearfix">
+              <div class="right">
+                <?php include 'part/button/delete.php'; ?>
+              </div>
               <p>How many chapters does Mark have? </p>
             </div>
             <div class="tips tips-success">Fill in the blank</div>

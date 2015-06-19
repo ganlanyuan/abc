@@ -7,6 +7,8 @@
   border: 1px solid $border-color;
   border-radius: $panel-radius;
   background-color: #f7f8fa;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 input,.input {
   @extend %form-base;
@@ -90,6 +92,23 @@ form li {
   &-aligned {
     max-width: em(700);
     margin: em(10) auto;
+    li {
+      @extend %clearfix;
+    }
+    .sub-field {
+      margin-bottom: em(10);
+      label {
+        display: block;
+        margin-bottom: 0.3em;
+      }
+    }
+    @include breakpoint('min' 400) {
+      .grid-3 {
+        float: left;
+        width: 30%;
+        margin-right: 3%;
+      }
+    }
     @include breakpoint('max' 699) {
       .control-label { 
         display: block;
@@ -105,16 +124,17 @@ form li {
       .full { min-width: 27em; }
       .control {
         &-label {
+          float: left;
           font-size: 14px;
           width: 12em;
           padding-right: 0.7em;
           line-height: 38px;
-          display: inline-block;
           text-align: right;
           vertical-align: top;
         }
         &-field {
-          display: inline-block;
+          float: left;
+          width: calc(100% - 12.7em);
         }
       }
       .required label:before {

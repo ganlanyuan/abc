@@ -9,8 +9,10 @@
     <?php include 'part/sub-nav.php'; ?>
     <div class="main">
       <div class="panel">
-        <div class="panel-head float-button clearfix">
-          <?php include 'part/button/edit.php'; ?>
+        <div class="panel-head clearfix">
+          <div class="right">
+            <?php include 'part/button/edit.php'; ?>
+          </div>
           <h3 class="heading3">STUDENT LIST: <span class="small">New Testment 101 - Sample Class</span></h3>
         </div>
         <div class="panel-body inner">

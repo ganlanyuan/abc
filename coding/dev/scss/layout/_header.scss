@@ -1,6 +1,7 @@
 // header
 // ==========
 
+.right { float: right; margin-left: 10px; }
 .clearfix { @extend %clearfix; }
 .container { @include container(em(1160)); }
 body { background-color: #f7f8fa; }

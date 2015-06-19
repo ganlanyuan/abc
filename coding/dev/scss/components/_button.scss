@@ -55,13 +55,3 @@
   }
   .alone { margin-right: 0; }
 }
-.float-button {
-  .button,
-  .popover { float: right; margin-left: 10px; }
-  .popover {
-    .button {
-      float: none;
-      margin-left: auto;
-    }
-  }
-}
