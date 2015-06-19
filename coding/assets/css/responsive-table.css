@@ -1,24 +1,24 @@
 @media (max-width: 40em) {
-  .table-responsive, .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr {
+  .table-responsive.table, .table-responsive.table thead, .table-responsive.table tbody, .table-responsive.table th, .table-responsive.table td, .table-responsive.table tr {
     display: block;
   }
-  .table-responsive thead tr {
+  .table-responsive.table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .table-responsive tr:last-of-type td {
+  .table-responsive.table tr:last-of-type td {
     border-bottom-width: 1px;
   }
-  .table-responsive tr:last-of-type td:last-of-type {
+  .table-responsive.table tr:last-of-type td:last-of-type {
     border-bottom-width: 0;
   }
-  .table-responsive td {
+  .table-responsive.table td {
     position: relative;
     padding-left: 55%;
     border-right-width: 0;
   }
-  .table-responsive td:before {
+  .table-responsive.table td:before {
     font-size: 15px;
     font-size: 0.9375rem;
     font-weight: 600;

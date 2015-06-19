@@ -13,11 +13,12 @@ ready(function () {
     k(this).parents('li').toggleClass('show');
   });
 
-  // button popup
-  k('.button-popup > .button').click(function() {
-    k(this).siblings('.popup-content').toggleClass('show');
+  // popover
+  k('.popover > .button').click(function(event) {
+    k(this).siblings('.popover-content').toggleClass('show');
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
   });
-  k('.button-popup .cancel').click(function() {
-    k(this).parents('.popup-content').removeClass('show');
+  k('.popover .cancel').click(function() {
+    k(this).parents('.popover-content').removeClass('show');
   });
 });

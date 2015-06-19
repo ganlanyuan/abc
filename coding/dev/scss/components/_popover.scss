@@ -1,11 +1,9 @@
-// button-popup
+// popover
 // ============
 
-.button-popup {
+.popover {
   display: inline-block;
   position: relative;
-}
-.popup {
   &-content {
     position: absolute;
     right: 110%;

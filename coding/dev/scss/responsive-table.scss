@@ -15,7 +15,7 @@
 .table {
   // Force table to not be like tables anymore
   @include breakpoint('max' 640)  {
-    &-responsive {
+    &-responsive.table {
       &, thead, tbody, th, td, tr {
         display: block; 
       }
