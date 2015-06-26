@@ -8,24 +8,22 @@
 <div class="container">
   <div class="panel">
     <div class="panel-head inline-group clearfix">
-      <h4 class="heading4 inline-cell"><span class="small">StudentID:</span> 1004</h4>
-      <h4 class="heading4 inline-cell"><span class="small">Student Name:</span> Henry Bergen</h4>
-      <div class="inline-cell">
-        <a href="" class="button button-info">View Printable Page</a>
-        <a href="" class="button button-info">Degree Progress Report</a>
-        <a href="" class="button button-warning">Reset Password</a>
-        <a href="" class="button button-danger">Delete</a>
-      </div>
+      <h2 class="heading2 inline-cell">New User Registration</h2>
     </div>
     <div class="panel-pure">
       <form action="">
         <ol class="form-aligned">
-          <li>
-            <span class="control-label">&nbsp;</span>
+          <li class="required">
+            <label for="" class="control-label">Account Type</label>
             <div class="control-field">
-              <img src="assets/img/avatar.png" alt="" width="140" height="140"><br />
-              <!-- Avatar <br /> -->
-              <?php include 'part/upload-base.php'; ?>
+              <span class="select-wrap">
+                <select name="" id="">
+                  <option value="student">student</option>
+                  <option value="">type2</option>
+                  <option value="">type3</option>
+                </select>
+                <span class="abc-caret-down"></span>
+              </span>
             </div>
           </li>
           <li>
@@ -45,21 +43,9 @@
               </div>
             </div>
           </li>
-          <li>
-            <label for="" class="control-label">Login E-mail</label>
+          <li class="required">
+            <label for="" class="control-label">E-mail</label>
             <div class="control-field"><input type="email"></div>
-          </li>
-          <li>
-            <label for="" class="control-label">Status</label>
-            <div class="control-field">
-              <span class="select-wrap">
-                <select id="status" name="status" data-bv-notempty-message="The status is required">
-                  <option value="">-- Select a Status --</option>
-                  <option value="1" selected="">Active</option><option value="2">Inactive</option><option value="3">Graduated</option>
-                </select>
-                <span class="abc-caret-down"></span>
-              </span>
-            </div>
           </li>
           <li>
             <label for="" class="control-label">Program</label>
@@ -162,10 +148,14 @@
           </li>
           <li>
             <span class="control-label">&nbsp;</span>
-            <div class="control-field"><a href="" class="button button-secondary">Save change</a></div>
+            <div class="control-field"><span class="button button-danger registration-submit">Submit</span></div>
           </li>
         </ol>
       </form>
+      <div class="tips-registration">
+        <h3>Thank you for registering!</h3>
+        <div>You will be notified by E-mail once your registration has been approved by administrator.</div>
+      </div>
     </div>
   </div>
 </div>

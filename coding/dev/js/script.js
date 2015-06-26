@@ -21,4 +21,19 @@
 //   k('.popover .cancel').click(function() {
 //     k(this).parents('.popover-content').removeClass('show');
 //   });
+
+//   // registration
+//   function hideTips () {
+//     k('.tips-registration').removeClass('show');
+//   }
+
+//   k('.registration-submit').click(function() {
+//     k('.tips-registration').addClass('show');
+//     setTimeout(hideTips, 4000);
+//   });
+
+//   // button request
+//   k('.js-request').click(function() {
+//     k(this).attr('disabled', 'true').text('Requested!');
+//   });
 // });

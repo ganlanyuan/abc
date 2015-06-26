@@ -11,8 +11,10 @@
       <?php include 'part/breadcrumb.php'; ?>
       <div class="panel panel-table">
         <div class="panel-head">
-          <div class="summary float-button clearfix">
-            <?php include 'part/button/edit.php'; ?>
+          <div class="summary clearfix">
+            <div class="right">
+              <?php include 'part/button/edit.php'; ?>
+            </div>
             This folder contains resources for New Testament 101
           </div>
         </div>
