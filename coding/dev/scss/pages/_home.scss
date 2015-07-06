@@ -48,10 +48,22 @@
   .select-wrap {
     width: calc(100% - 87px);
     .no-csscalc & { width: 66%; }
-    select { width: 120%; }
+    select { width: 130%; }
   }
   input { 
     float: right; 
     .no-csscalc & { width: 33%; }
+  }
+}
+.regist-course {
+  > a { 
+    @extend %clearfix;
+    display: block; 
+  }
+  @include breakpoint(420 999 1040) {
+    strong:after { content: ' for Courses';}
+  }
+  .button {
+    float: right;
   }
 }

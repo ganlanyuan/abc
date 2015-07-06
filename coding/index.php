@@ -75,6 +75,11 @@
           </li>
         </ul>
       </div>
+      <div class="regist-course panel-foot">
+        <a href="">
+          <span class="button button-danger">Enrollment Page</span><strong>Register</strong>
+        </a>
+      </div>
       <div class="view-term panel-bottom panel-foot">
         <h4 class="heading4">View Another Term</h4>
         <form action="">
