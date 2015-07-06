@@ -77,7 +77,7 @@
       </div>
       <div class="regist-course panel-foot">
         <a href="">
-          <span class="button button-danger">Enrollment Page</span><strong>Register</strong>
+          <span class="button button-danger">Enrollment Page</span><strong class="heading4">Register</strong>
         </a>
       </div>
       <div class="view-term panel-bottom panel-foot">
