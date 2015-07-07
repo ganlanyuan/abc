@@ -56,17 +56,12 @@
   }
 }
 .regist-course {
-  background-color: lighten(map-get($alerts, 'info'), 10%);
-  border-width: 0;
-  margin-top: -1px;
   > a { 
     @extend %clearfix;
     display: block; 
-    &:hover > strong { text-decoration: underline; }
   }
   strong {
     display: inline-block;
-    color: #fff;
     margin-top: 6px;
   }
   @include breakpoint(420 999 1106) {

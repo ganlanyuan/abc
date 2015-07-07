@@ -75,12 +75,7 @@
           </li>
         </ul>
       </div>
-      <div class="regist-course panel-foot">
-        <a href="">
-          <span class="button button-danger">Enrollment Page</span><strong class="heading4">Register</strong>
-        </a>
-      </div>
-      <div class="view-term panel-bottom panel-foot">
+      <div class="view-term panel-foot">
         <h4 class="heading4">View Another Term</h4>
         <form action="">
           <span class="select-wrap">
@@ -93,6 +88,11 @@
           </span>
           <input type="submit" value="Submit" class="button button-danger">
         </form>
+      </div>
+      <div class="regist-course panel-bottom panel-foot">
+        <a href="">
+          <span class="button button-danger">Enrollment Page</span><strong class="heading4">Register</strong>
+        </a>
       </div>
     </div>
   </div>
