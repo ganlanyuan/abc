@@ -131,6 +131,7 @@ form li {
           line-height: 38px;
           text-align: right;
           vertical-align: top;
+          .full-email & { width: 3em; }
         }
         &-field {
           float: left;

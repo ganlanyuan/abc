@@ -44,7 +44,12 @@
   }
   &-mailbox {
     margin: 20px 0;
-    border: 1px solid $border-color; 
+    thead { border: 1px solid $brand-color; }
+    tbody { border: 1px solid $border-color; }
+    th {
+      color: #fff;
+      background-color: $brand-color;
+    }
     th, td {
       padding: 10px;
       font-size: 13px;

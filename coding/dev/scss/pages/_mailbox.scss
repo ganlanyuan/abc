@@ -56,12 +56,51 @@
     a { color: map-get($button, 'danger'); }
   }
 }
+.full-email {
+  margin: 2% 4%;
+  header { margin-bottom: 20px; }
+  p {
+    font-size: 13px;
+    color: #212121;
+    max-width: 46em;
+    margin-bottom: 1.5em;
+  }
+  [type="submit"] { border-width: 0; }
+}
+.email-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+  @include breakpoint('max' 400) { font-size: 20px; }
+}
+.fromline {
+  font-size: 11px;
+  color: #888;
+  a:hover { text-decoration: underline; }
+  .from {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .to { color: #888; }
+}
 
 @include breakpoint('max' 999) {
   .sub-nav-mailbox {
     @include accordion('div' 200px 0.3s);
     text-align: center;
     margin-bottom: 20px;
+  }
+}
+@include breakpoint('max' 479) {
+  .email-buttons {
+    margin-bottom: 10px;
+  }
+}
+@include breakpoint('min' 480) {
+  .email-buttons {
+    float: right;
   }
 }
 @include breakpoint('min' 1000) {
