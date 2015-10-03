@@ -12,7 +12,7 @@
   <div class="content nav-left clearfix">
     <?php include 'part/sub-nav-mailbox.php'; ?>
     <div class="main-mailbox">
-      <div class="panel panel-pure discussion-post">
+      <div class="panel panel-pure">
         <article class="full-email">
           <header class="">
             <h2 class="email-title">My homework due to tomorrow</h2>

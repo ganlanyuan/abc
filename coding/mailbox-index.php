@@ -12,8 +12,8 @@
   <div class="content nav-left clearfix">
     <?php include 'part/sub-nav-mailbox.php'; ?>
     <div class="main-mailbox">
-      <div class="panel panel-pure discussion-post">
-        <div class="discussion-post-head clearfix">
+      <div class="panel panel-pure">
+        <div class="dclearfix">
           <button class="button button-danger right">Compose new message</button>
           <div>
             <label for="selected-message">Selected messages</label>

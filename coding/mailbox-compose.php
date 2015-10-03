@@ -12,7 +12,7 @@
   <div class="content nav-left clearfix">
     <?php include 'part/sub-nav-mailbox.php'; ?>
     <div class="main-mailbox">
-      <div class="panel panel-pure discussion-post">
+      <div class="panel panel-pure">
         <div class="full-email">
           <h2 class="email-title">Compose message</h2>
           <form action="">

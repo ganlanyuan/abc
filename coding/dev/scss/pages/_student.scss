@@ -1,0 +1,19 @@
+// student
+// =============
+
+.student-profile {
+  padding: 2% 5%;
+  font-size: 13px;
+  dt {
+    float: left;
+    margin-right: 0.5em;
+    font-weight: bold;
+  }
+  dd {
+    margin-bottom: 1em;
+  }
+  @include breakpoint('min' 600) {
+    figure { @include span(3 of 10); }
+    dl { @include span(7 of 10 last); }
+  }
+}
