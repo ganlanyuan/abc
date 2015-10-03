@@ -1,0 +1,76 @@
+// header
+// ==========
+
+[data-unread] {
+  position: relative;
+  &:after {
+    content: attr(data-unread);
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: $opensans;
+    color: #fff;
+    background-color: map-get($button, 'danger');
+    border-radius: 50%;
+  }
+}
+
+.sub-nav-mailbox {
+  > label {
+    display: block;
+    margin-bottom: 10px;
+    > span {
+      display: inline-block;
+      margin-left: 1em;
+    }
+  }
+  h3 {
+    @include type(22px weight-normal);
+    display: inline-block;
+  }
+  ul {
+    border: 1px solid $border-color; 
+    background-color: #fff;
+  }
+  a {
+    display: block;
+    border-bottom: 1px solid $border-color; 
+    transition: color 0.3s;
+    &:hover { color: map-get($button, 'danger'); }
+  }
+  li:last-child > a{ border-bottom-width: 0; }
+  .title,
+  a {
+    @include type(14px);
+    padding: 0.5em 0.8em;
+  }
+  .title { color: #bbb; }
+  .current {
+    font-weight: bold;
+    a { color: map-get($button, 'danger'); }
+  }
+}
+
+@include breakpoint('max' 999) {
+  .sub-nav-mailbox {
+    @include accordion('div' 200px 0.3s);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@include breakpoint('min' 1000) {
+  .sub-nav-mailbox { 
+    @include span(20 of 100); 
+    > label {
+      cursor: default;
+      > span { display: none; }
+    }
+  }
+  .main-mailbox { @include span(80 of 100 last); }
+}

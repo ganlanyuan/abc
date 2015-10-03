@@ -1,4 +1,4 @@
-<header class="head">
+<header class="head <?php if ($category == 'mailbox') {echo 'head-mailbox'; } ?>">
   <div class="container">
     <div class="branding"><a href=""><img src="assets/img/logo.png" alt="ABC Institue"></a></div>
     <nav class="head-nav">
@@ -8,6 +8,9 @@
           <span><span class="nav-title">My Homepage</span></span>
         </a></li>
         <li class="my-login dropdown">
+          <?php if ($category == 'mailbox') {
+            echo '<a href=""><span class="abc-email icons-circle icons-md" data-unread="' . $unread . '"></span></a>';
+          } ?>
           <span class="abc-user icons-circle icons-md"></span>
           <span class="user-name">
             <span class="nav-title"><small>Logged in as</small><br />Michael Jones</span>

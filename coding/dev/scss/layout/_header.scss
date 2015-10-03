@@ -42,10 +42,11 @@ body { background-color: #f7f8fa; }
       width: em(460);
       float: right;
       border-left: 1px solid $border-color;
+      .head-mailbox & { width: em(494); }
     }
     .abc {
       &-home,
-      &-user { @include visible(350); }
+      &-user { @include visible(360); }
     } 
     a { color: $brand-color; }
     ul {
@@ -78,7 +79,7 @@ body { background-color: #f7f8fa; }
     }
   }
   .icons-circle { @extend %global-transition; }
-  @include breakpoint('max' 430) {
+  @include breakpoint('max' 440) {
     .icons-circle {
       width: map-get($icon-wrap-size, 'sm');
       height: map-get($icon-wrap-size, 'sm');
@@ -128,4 +129,6 @@ body { background-color: #f7f8fa; }
 .my-homepage > a > span,
 .my-login > span {
   margin: 0 2px;
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
 }

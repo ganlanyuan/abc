@@ -42,4 +42,30 @@
     }
     .button { margin-bottom: 5px; }
   }
+  &-mailbox {
+    margin: 20px 0;
+    border: 1px solid $border-color; 
+    th, td {
+      padding: 10px;
+      font-size: 13px;
+      border-right-width: 0;
+      &:first-child { width: 13px; }
+      &:nth-child(2) { width: 7em; }
+      &:last-child { width: 10em; }
+      input { margin-right: 0; }
+    }
+    time { font-size: 12px; }
+    @include breakpoint('max' 767) {
+      th, td {
+        &:last-child { width: 2.5em; }
+      }
+      .date-y,
+      .date-t { display: none; }
+    }
+    @include breakpoint('max' 639) {
+      th, td {
+        &:nth-child(2) { display: none; }
+      }
+    }
+  }
 }
