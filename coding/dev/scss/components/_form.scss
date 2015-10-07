@@ -126,7 +126,7 @@ form li {
         &-label {
           float: left;
           font-size: 14px;
-          width: 12em;
+          width: 18.7em;
           padding-right: 0.7em;
           line-height: 38px;
           text-align: right;
@@ -135,7 +135,7 @@ form li {
         }
         &-field {
           float: left;
-          width: calc(100% - 12.7em);
+          width: calc(100% - 19em);
         }
       }
       .required label:before {

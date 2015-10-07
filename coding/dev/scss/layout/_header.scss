@@ -39,7 +39,7 @@ body { background-color: #f7f8fa; }
       border-bottom: 1px solid $border-color;
     }
     @include breakpoint('min' map-get($bp, 'md')){
-      width: em(460);
+      width: em(488);
       float: right;
       border-left: 1px solid $border-color;
       .head-mailbox & { width: em(494); }
@@ -101,7 +101,7 @@ body { background-color: #f7f8fa; }
 .user-panel {
   position: absolute;
   right: 0;
-  width: 200px;
+  width: 223px;
   background-color: #fff;
   border: 1px solid $border-color;
   display: none;
